@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="865px" viewBox="0 0 1440 865" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Rectangle 🌈ease-in-out;lrgb;15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#079BE8" offset="0%"></stop>
+            <stop stop-color="#099BE8" offset="8.62099125%"></stop>
+            <stop stop-color="#0C9DE9" offset="16.5597668%"></stop>
+            <stop stop-color="#109EEB" offset="23.9300292%"></stop>
+            <stop stop-color="#13A1ED" offset="30.8454811%"></stop>
+            <stop stop-color="#17A3EF" offset="37.4198251%"></stop>
+            <stop stop-color="#1AA6F1" offset="43.7667639%"></stop>
+            <stop stop-color="#1DA9F4" offset="50%"></stop>
+            <stop stop-color="#20ACF6" offset="56.2332361%"></stop>
+            <stop stop-color="#23AFF9" offset="62.5801749%"></stop>
+            <stop stop-color="#25B1FB" offset="69.1545189%"></stop>
+            <stop stop-color="#27B3FC" offset="76.0699709%"></stop>
+            <stop stop-color="#28B5FE" offset="83.4402332%"></stop>
+            <stop stop-color="#29B6FF" offset="91.3790087%"></stop>
+            <stop stop-color="#29B6FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-🌈ease-in-out;lrgb;15" fill="url(#linearGradient-1)" x="0" y="0" width="1440" height="865"></rect>
+    </g>
+</svg>

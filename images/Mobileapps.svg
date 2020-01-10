@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="34px" viewBox="0 0 22 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Mobileapps</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service" transform="translate(-561.000000, -827.000000)">
+            <g transform="translate(559.000000, 800.000000)" id="Service-mobile">
+                <g transform="translate(0.000000, 24.000000)">
+                    <rect id="Rectangle" stroke="#3570C6" stroke-width="3" x="3.5" y="4.5" width="19" height="31" rx="3"></rect>
+                    <rect id="Rectangle" fill="#3570C6" fill-rule="evenodd" x="5" y="10" width="16" height="2"></rect>
+                    <rect id="Rectangle" fill="#3570C6" fill-rule="evenodd" x="5" y="26" width="16" height="2"></rect>
+                    <rect id="Rectangle" fill="#3570C6" fill-rule="evenodd" x="11" y="30" width="4" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

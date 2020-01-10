@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="36px" viewBox="0 0 40 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study-upperroom" transform="translate(-911.000000, -1212.000000)">
+            <g id="icon" transform="translate(911.000000, 1211.000000)">
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                <polyline id="Path-4" stroke="#079BE8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="3 20.949707 14.4638672 33.7480469 24.7382813 4.11376953 36.1601563 22.7124023"></polyline>
+                <circle id="Oval" fill="#079BE8" cx="37" cy="24" r="3"></circle>
+                <circle id="Oval" fill="#079BE8" cx="25" cy="4" r="3"></circle>
+                <circle id="Oval" fill="#079BE8" cx="14" cy="34" r="3"></circle>
+                <circle id="Oval" fill="#079BE8" cx="3" cy="21" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

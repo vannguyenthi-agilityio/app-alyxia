@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="36px" viewBox="0 0 38 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Bigdata</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service" transform="translate(-560.000000, -1370.000000)">
+            <g transform="translate(559.000000, 1344.000000)" id="Service-big-data">
+                <g transform="translate(0.000000, 24.000000)">
+                    <circle id="Oval" fill="#3570C6" fill-rule="evenodd" cx="26" cy="6" r="4"></circle>
+                    <polyline id="Path-3" stroke="#3570C6" stroke-width="2" stroke-linejoin="round" points="36 23 26 5 17 34 5 21"></polyline>
+                    <circle id="Oval" fill="#3570C6" fill-rule="evenodd" cx="35.5" cy="21.5" r="3.5"></circle>
+                    <circle id="Oval" fill="#3570C6" fill-rule="evenodd" cx="17" cy="34" r="4"></circle>
+                    <circle id="Oval" fill="#3570C6" fill-rule="evenodd" cx="4.5" cy="20.5" r="3.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

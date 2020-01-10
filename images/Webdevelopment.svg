@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="30px" viewBox="0 0 36 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Webdevelopment</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service" transform="translate(-913.000000, -830.000000)" fill="#3570C6">
+            <g transform="translate(911.000000, 800.000000)" id="Service-web">
+                <g transform="translate(0.000000, 24.000000)">
+                    <path d="M5,6 L35,6 C36.6568542,6 38,7.34314575 38,9 L38,25 C38,26.6568542 36.6568542,28 35,28 L5,28 C3.34314575,28 2,26.6568542 2,25 L2,9 C2,7.34314575 3.34314575,6 5,6 Z M5,10 L5,24 C5,24.5522847 5.44771525,25 6,25 L34,25 C34.5522847,25 35,24.5522847 35,24 L35,10 C35,9.44771525 34.5522847,9 34,9 L6,9 C5.44771525,9 5,9.44771525 5,10 Z" id="Rectangle" fill-rule="nonzero"></path>
+                    <rect id="Rectangle" fill-rule="evenodd" x="19" y="28" width="2" height="8"></rect>
+                    <rect id="Rectangle" fill-rule="evenodd" x="13" y="34" width="14" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

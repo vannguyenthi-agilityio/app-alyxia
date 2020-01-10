@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="601px" viewBox="0 0 1440 601" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>gradient1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FCF6E4" offset="0%"></stop>
+            <stop stop-color="#FCF6E4" offset="8.62099125%"></stop>
+            <stop stop-color="#FCF5E2" offset="16.5597668%"></stop>
+            <stop stop-color="#FCF5E1" offset="23.9300292%"></stop>
+            <stop stop-color="#FBF3DE" offset="30.8454811%"></stop>
+            <stop stop-color="#FBF2DB" offset="37.4198251%"></stop>
+            <stop stop-color="#FAF1D8" offset="43.7667639%"></stop>
+            <stop stop-color="#FAF0D5" offset="50%"></stop>
+            <stop stop-color="#FAEED2" offset="56.2332361%"></stop>
+            <stop stop-color="#F9EDCF" offset="62.5801749%"></stop>
+            <stop stop-color="#F9ECCC" offset="69.1545189%"></stop>
+            <stop stop-color="#F8EBC9" offset="76.0699709%"></stop>
+            <stop stop-color="#F8EAC7" offset="83.4402332%"></stop>
+            <stop stop-color="#F8E9C5" offset="91.3790087%"></stop>
+            <stop stop-color="#F8E9C5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="gradient1" fill="url(#linearGradient-1)" x="0" y="0" width="1440" height="601" rx="2"></rect>
+    </g>
+</svg>

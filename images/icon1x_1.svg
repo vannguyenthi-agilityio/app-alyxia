@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="37px" viewBox="0 0 40 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>icon@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study-sundaygoods-Copy" transform="translate(-563.000000, -1082.000000)">
+            <g id="icon" transform="translate(559.000000, 1081.000000)">
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                <circle id="Oval" stroke="#1F66B8" stroke-width="3" cx="20" cy="10.5882353" r="7.91176471"></circle>
+                <path d="M35,10 L41,10 L41,19.7585786 C41,19.8138071 40.9552285,19.8585786 40.9,19.8585786 C40.8734783,19.8585786 40.848043,19.848043 40.8292893,19.8292893 L38.0707107,17.0707107 C38.0316582,17.0316582 37.9683418,17.0316582 37.9292893,17.0707107 L35.1707107,19.8292893 C35.1316583,19.8683417 35.0683418,19.8683417 35.0292893,19.8292893 C35.0105357,19.8105357 35,19.7851003 35,19.7585786 L35,10 L35,10 Z" id="Rectangle" stroke="#1F66B8" stroke-width="2"></path>
+                <circle id="Oval" stroke="#1F66B8" stroke-width="2" fill="#FFFFFF" cx="38" cy="7" r="5"></circle>
+                <path d="M34.1176471,36.4705882 C34.1176471,28.6736271 27.7969612,22.3529412 20,22.3529412 C12.2030388,22.3529412 5.88235294,28.6736271 5.88235294,36.4705882" id="Shape" stroke="#1F66B8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

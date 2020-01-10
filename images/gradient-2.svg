@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1180px" viewBox="0 0 1440 1180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#1F66B8" offset="0%"></stop>
+            <stop stop-color="#00366B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study-sundaygoods-Copy" transform="translate(0.000000, -2869.000000)" fill="url(#linearGradient-1)">
+            <polygon id="Rectangle" points="0 3359 1440 2869 1440 3559 0 4049"></polygon>
+        </g>
+    </g>
+</svg>

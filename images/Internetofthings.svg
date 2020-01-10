@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Internetofthings</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Service" transform="translate(-209.000000, -1370.000000)" stroke="#3570C6">
+            <g transform="translate(207.000000, 1344.000000)" id="Service-iot">
+                <g transform="translate(0.000000, 24.000000)">
+                    <polyline id="Path-2" stroke-width="2" points="15 25.5020616 25 15.250047 19.8790094 10 19.8790094 30 25 24.749953 15 14.4979384"></polyline>
+                    <rect id="Rectangle" stroke-width="3" x="3.5" y="3.5" width="33" height="33" rx="16.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
