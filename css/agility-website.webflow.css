@@ -3977,6 +3977,16 @@ p {
 }
 
 @media (max-width: 767px) {
+  .paga.triangle-gradient.drum-triangle-gradient {
+    width: 400%;
+  }
+  .bose-app-links {
+    text-align: center;
+  }
+  .bose-app-links .google-play-link.bose-link {
+    margin-left: 0;
+    margin-top: 15px;
+  }
   .video-section {
     height: 94vh;
   }
