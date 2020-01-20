@@ -2288,6 +2288,7 @@ p {
 
 .carousel-section.upperroom-carousel-section {
   margin-top: -18%;
+  height: 1800px;
 }
 
 .web-carousel {
@@ -2407,6 +2408,7 @@ p {
   right: auto;
   bottom: 0%;
   z-index: 5;
+  height: 60%;
 }
 
 .app-store-hover {
@@ -2738,7 +2740,7 @@ p {
 }
 
 .h5.case-studies-link-text.upperroom {
-  color: #079be8;
+  color: #fff;
 }
 
 .h5.case-studies-link-text.paga {
@@ -7464,4 +7466,34 @@ p {
   src: url('../fonts/HelveticaNeueHv.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+}
+
+@media (min-width: 1600px) {
+  .image-section-2.paga,
+  .image-section-1.drum-image-section-1,
+  .image-section-2.drum-image-section-2,
+  .web-section-image.kenzie-online-web-section-image,
+  .web-section-image.worldroamer-web-section-image {
+    padding-top: 40%;
+  }
+
+  .carousel-section,
+  .carousel-section.simon-kucher-carousel-section,
+  .carousel-section.kenzie-online-carousel,
+  .carousel-section.worldroamer-carousel-section {
+    height: 1850px;
+  }
+
+  .simon-kucher-carousel-section .web-background-gradient.web-gradient-2,
+  .kenzie-online-carousel .web-background-gradient.web-gradient-2,
+  .worldroamer-carousel-section .web-background-gradient.web-gradient-2 {
+    top: 2%;
+  }
+
+  .h5.case-studies-link-text.cheapism,
+  .h5.case-studies-link-text.bose,
+  .h5.case-studies-link-text.kenzie-online,
+  .h5.case-studies-link-text.worldroamer {
+    color: #fff;
+  }
 }
