@@ -7483,6 +7483,7 @@ p {
   .image-section-1.drum-image-section-1,
   .image-section-2.drum-image-section-2,
   .web-section-image.kenzie-online-web-section-image,
+  .web-section-image.upperroom,
   .web-section-image.worldroamer-web-section-image {
     padding-top: 40%;
   }
@@ -7505,5 +7506,38 @@ p {
   .h5.case-studies-link-text.kenzie-online,
   .h5.case-studies-link-text.worldroamer {
     color: #fff;
+  }
+
+  img.link-arrow {
+    width: 28px;
+  }
+  .right-arrow-carousel {
+    background-image: url(../images/white-arrow.svg);
+  }
+
+  .worldroamer-carousel-section .w-slider-dot,
+  .kenzie-online-carousel .w-slider-dot,
+  .cheapism-carousel-section .w-slider-dot,
+  .simon-kucher-carousel-section .w-slider-dot {
+    background: #fff;
+    opacity: 0.6;
+  }
+  
+  .worldroamer-carousel-section .w-slider-dot.w-active,
+  .kenzie-online-carousel .w-slider-dot.w-active,
+  .cheapism-carousel-section .w-slider-dot.w-active,
+  .simon-kucher-carousel-section .w-slider-dot.w-active {
+    background: #fff;
+    opacity: 1;
+  }
+
+  .press-block .tech-in-asia,
+  .press-block .cnbc {
+    height: 50px;
+    max-width: 100%;
+  }
+
+  .who-we-are-section {
+    /* height: 700px; */
   }
 }
