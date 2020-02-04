@@ -2739,10 +2739,6 @@ p {
   color: #1f66b8;
 }
 
-.h5.case-studies-link-text.upperroom {
-  color: #fff;
-}
-
 .h5.case-studies-link-text.paga {
   color: #f2931e;
 }
@@ -7506,6 +7502,7 @@ p {
 
   .h5.case-studies-link-text.cheapism,
   .h5.case-studies-link-text.bose,
+  .h5.case-studies-link-text.upperroom,
   .h5.case-studies-link-text.kenzie-online,
   .h5.case-studies-link-text.worldroamer {
     color: #fff;
@@ -7545,4 +7542,5 @@ p {
   .who-we-are-section {
     /* height: 700px; */
   }
+
 }
