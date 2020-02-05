@@ -7479,7 +7479,6 @@ p {
   .image-section-1.drum-image-section-1,
   .image-section-2.drum-image-section-2,
   .web-section-image.kenzie-online-web-section-image,
-  .web-section-image.upperroom,
   .web-section-image.worldroamer-web-section-image {
     padding-top: 40%;
   }
@@ -7502,7 +7501,6 @@ p {
 
   .h5.case-studies-link-text.cheapism,
   .h5.case-studies-link-text.bose,
-  .h5.case-studies-link-text.upperroom,
   .h5.case-studies-link-text.kenzie-online,
   .h5.case-studies-link-text.worldroamer {
     color: #fff;
@@ -7511,14 +7509,10 @@ p {
   img.link-arrow {
     width: 28px;
   }
-  .right-arrow-carousel {
-    background-image: url(../images/white-arrow.svg);
-  }
 
   .worldroamer-carousel-section .w-slider-dot,
   .kenzie-online-carousel .w-slider-dot,
   .cheapism-carousel-section .w-slider-dot,
-  .upperroom-carousel-section .w-slider-dot,
   .simon-kucher-carousel-section .w-slider-dot {
     background: #fff;
     opacity: 0.6;
@@ -7527,7 +7521,6 @@ p {
   .worldroamer-carousel-section .w-slider-dot.w-active,
   .kenzie-online-carousel .w-slider-dot.w-active,
   .cheapism-carousel-section .w-slider-dot.w-active,
-  .upperroom-carousel-section .w-slider-dot.w-active,
   .simon-kucher-carousel-section .w-slider-dot.w-active {
     background: #fff;
     opacity: 1;
@@ -7543,4 +7536,28 @@ p {
     /* height: 700px; */
   }
 
+}
+
+@media (min-width: 2435px) {
+  .web-section-image.upperroom {
+    padding-top: 40%;
+  }
+
+  .h5.case-studies-link-text.upperroom {
+    color: #fff;
+  }
+
+  .upperroom-carousel-section .right-arrow-carousel {
+    background-image: url(../images/white-arrow.svg);
+  }
+
+  .upperroom-carousel-section .w-slider-dot {
+    background: #fff;
+    opacity: 0.6;
+  }
+  
+  .upperroom-carousel-section .w-slider-dot.w-active {
+    background: #fff;
+    opacity: 1;
+  }
 }
