@@ -992,13 +992,15 @@ textarea.w-select {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: #fff;
+  opacity: 0.6;
   cursor: pointer;
   margin: 0 3px 0.5em;
   transition: background-color 100ms, color 100ms;
 }
 .w-slider-dot.w-active {
   background-color: #fff;
+  opacity: 1;
 }
 .w-slider-arrow-left,
 .w-slider-arrow-right {
@@ -1013,8 +1015,6 @@ textarea.w-select {
   overflow: hidden;
   color: white;
   font-size: 40px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

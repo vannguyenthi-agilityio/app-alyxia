@@ -2259,6 +2259,8 @@ p {
   bottom: auto;
   z-index: -1;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .web-background-gradient.web-gradient-2 {
@@ -2323,7 +2325,7 @@ p {
 
 .right-arrow-carousel {
   width: 58px;
-  background-image: url('../images/Right-Arrow-Carousel.svg');
+  background-image: url('../images/white-arrow.svg');
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
@@ -2332,11 +2334,12 @@ p {
 
 .left-arrow-carousel {
   width: 58px;
-  background-image: url('../images/Left-Arrow-Carousel.svg');
+  background-image: url('../images/white-arrow.svg');
   background-position: 50% 50%;
   background-size: auto;
   background-repeat: no-repeat;
   color: transparent;
+  transform: rotate(180deg);
 }
 
 .left-arrow {
@@ -2714,34 +2717,34 @@ p {
 
 .h5.case-studies-link-text {
   margin-right: 12px;
-  color: #3570c6;
+  color: #fff;
   text-decoration: none;
 }
 
-.h5.case-studies-link-text.bose {
-  color: #17171c;
+/* .h5.case-studies-link-text.bose {
+  color: #fff;
 }
 
 .h5.case-studies-link-text.cheapism {
-  color: #584efe;
+  color: #fff;
 }
 
 .h5.case-studies-link-text.worldroamer {
-  color: #c035a5;
+  color: #fff;
 }
 
 .h5.case-studies-link-text.drum {
-  color: #53c4b5;
+  color: #fff;
 }
 
 .h5.case-studies-link-text.kenzie-online {
   width: auto;
-  color: #1f66b8;
+  color: #fff;
 }
 
 .h5.case-studies-link-text.paga {
-  color: #f2931e;
-}
+  color: #fff;
+} */
 
 .header-number {
   margin-bottom: 0px;
@@ -7499,18 +7502,18 @@ p {
     top: 2%;
   }
 
-  .h5.case-studies-link-text.cheapism,
+  /* .h5.case-studies-link-text.cheapism,
   .h5.case-studies-link-text.bose,
   .h5.case-studies-link-text.kenzie-online,
   .h5.case-studies-link-text.worldroamer {
     color: #fff;
-  }
+  } */
 
   img.link-arrow {
     width: 28px;
   }
 
-  .worldroamer-carousel-section .w-slider-dot,
+  /* .worldroamer-carousel-section .w-slider-dot,
   .kenzie-online-carousel .w-slider-dot,
   .cheapism-carousel-section .w-slider-dot,
   .simon-kucher-carousel-section .w-slider-dot {
@@ -7524,7 +7527,7 @@ p {
   .simon-kucher-carousel-section .w-slider-dot.w-active {
     background: #fff;
     opacity: 1;
-  }
+  } */
 
   .press-block .tech-in-asia,
   .press-block .cnbc {
@@ -7538,7 +7541,7 @@ p {
 
 }
 
-@media (min-width: 2435px) {
+/* @media (min-width: 2435px) {
   .web-section-image.upperroom {
     padding-top: 40%;
   }
@@ -7560,4 +7563,4 @@ p {
     background: #fff;
     opacity: 1;
   }
-}
+} */
