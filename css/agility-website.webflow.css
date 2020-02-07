@@ -2992,6 +2992,8 @@ p {
 
 .slide-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .client-link-block {
@@ -3329,6 +3331,9 @@ p {
   .case-study-h2.carousel-title {
     margin-top: 40%;
   }
+  /* .simon-kucher-carousel-container .case-study-h2.carousel-title {
+    margin-top: 40%;
+  } */
   .video-container.services {
     padding-right: 16px;
     padding-left: 16px;
@@ -3617,9 +3622,9 @@ p {
     padding-right: 24px;
     padding-left: 24px;
   }
-  .case-study-web-container.carousel-container.simon-kucher-carousel-container {
+  /* .case-study-web-container.carousel-container.simon-kucher-carousel-container {
     margin-top: 16%;
-  }
+  } */
   .case-study-web-hero-right-column.simon-kucher-hero-right-column {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4567,9 +4572,9 @@ p {
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .case-study-web-container.carousel-container.simon-kucher-carousel-container {
+  /* .case-study-web-container.carousel-container.simon-kucher-carousel-container {
     margin-top: 80%;
-  }
+  } */
   .case-study-web-hero-row {
     padding-top: 80px;
   }
@@ -4671,7 +4676,6 @@ p {
     font-size: 32px;
     line-height: 48px;
   }
-  .simon-kucher-carousel-section .case-study-h2,
   .kenzie-online-carousel .case-study-h2 {
     margin-top: 5%;
   }
@@ -7486,6 +7490,7 @@ p {
   .image-section-2.paga,
   .image-section-1.drum-image-section-1,
   .image-section-2.drum-image-section-2,
+  .web-section-image.upperroom,
   .web-section-image.kenzie-online-web-section-image,
   .web-section-image.worldroamer-web-section-image {
     padding-top: 40%;
