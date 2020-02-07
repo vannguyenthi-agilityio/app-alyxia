@@ -2290,7 +2290,6 @@ p {
 
 .carousel-section.upperroom-carousel-section {
   margin-top: -18%;
-  height: 1800px;
 }
 
 .web-carousel {
@@ -3327,6 +3326,9 @@ p {
   .nav-link.white-link {
     color: #0a2630;
   }
+  .case-study-h2.carousel-title {
+    margin-top: 40%;
+  }
   .video-container.services {
     padding-right: 16px;
     padding-left: 16px;
@@ -3797,7 +3799,7 @@ p {
     padding-left: 0px;
   }
   .h5.case-studies-link-text {
-    width: 100px;
+    /* width: 100px; */
   }
   .h5.case-studies-link-text.bose {
     width: auto;
@@ -4669,6 +4671,10 @@ p {
     font-size: 32px;
     line-height: 48px;
   }
+  .simon-kucher-carousel-section .case-study-h2,
+  .kenzie-online-carousel .case-study-h2 {
+    margin-top: 5%;
+  }
   .case-study-h2.section-1-header {
     max-width: 100%;
     margin-bottom: 40px;
@@ -4754,12 +4760,11 @@ p {
   }
   .web-background-gradient.web-gradient-2 {
     position: absolute;
-    top: -3%;
+    /* top: -3%; */
     display: block;
-    margin-top: -278px;
+    /* margin-top: -278px; */
   }
   .web-background-gradient.web-gradient-2.simon-kucher-gradient {
-    top: -20%;
     z-index: -2;
     display: block;
     margin-top: 0%;
@@ -7500,6 +7505,9 @@ p {
   .kenzie-online-carousel .web-background-gradient.web-gradient-2,
   .worldroamer-carousel-section .web-background-gradient.web-gradient-2 {
     top: 2%;
+  }
+  .carousel-section.upperroom-carousel-section {
+    height: 1800px;
   }
 
   /* .h5.case-studies-link-text.cheapism,
