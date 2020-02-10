@@ -2720,8 +2720,11 @@ p {
 
 .h5.case-studies-link-text {
   margin-right: 12px;
-  color: #fff;
+  color: #3570c6;
   text-decoration: none;
+}
+.carousel-section .h5.case-studies-link-text {
+  color: #fff; 
 }
 
 /* .h5.case-studies-link-text.bose {
