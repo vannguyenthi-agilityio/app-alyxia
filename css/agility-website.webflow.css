@@ -1542,6 +1542,8 @@ p {
   font-size: 22px;
   line-height: 33px;
   letter-spacing: 0.26px;
+  position: relative;
+  z-index: 1000;
 }
 
 .tech-stack-section {
@@ -2143,6 +2145,8 @@ p {
 
 .web-section-2.bose-web-section-2 {
   height: auto;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .section-2-grid {
@@ -2732,18 +2736,18 @@ p {
   color: #fff;
 }
 
-.h5.case-studies-link-text.drum {
-  color: #fff;
-}
-
 .h5.case-studies-link-text.kenzie-online {
   width: auto;
   color: #fff;
+}*/
+
+.h5.case-studies-link-text.drum {
+  color: #53c4b5;
 }
 
 .h5.case-studies-link-text.paga {
-  color: #fff;
-} */
+  color: #f2931e;
+}
 
 .header-number {
   margin-bottom: 0px;
@@ -4449,6 +4453,8 @@ p {
     height: auto;
     padding-top: 120px;
     padding-bottom: 120px;
+    position: relative;
+    z-index: 100;
   }
   .tech-stack-section.worldroamer-tech-stack-section {
     padding-top: 64px;
