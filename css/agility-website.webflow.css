@@ -1550,6 +1550,9 @@ p {
   height: auto;
   padding-top: 120px;
   padding-bottom: 120px;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
 }
 
 .tech-stack-section.les-mills {
@@ -4465,6 +4468,7 @@ p {
     padding-bottom: 120px;
     position: relative;
     z-index: 2;
+    background-color: #fff;
   }
   .tech-stack-section.worldroamer-tech-stack-section {
     padding-top: 64px;
