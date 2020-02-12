@@ -3685,7 +3685,7 @@ p {
     padding-bottom: 80px;
   }
   .web-section-2.bose-web-section-2 {
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
   }
   .section-2-grid {
     -ms-grid-columns: 1.5fr 1fr 1fr;
@@ -4792,6 +4792,7 @@ p {
     z-index: -2;
     display: block;
     margin-top: 0%;
+    top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -4814,7 +4815,7 @@ p {
   }
   .carousel-section.simon-kucher-carousel-section {
     height: 1280px;
-    margin-top: -30%;
+    margin-top: -60%;
   }
   .carousel-section.worldroamer-carousel-section {
     margin-top: 32%;
