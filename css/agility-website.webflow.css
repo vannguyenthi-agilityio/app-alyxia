@@ -7546,6 +7546,10 @@ p {
   img.link-arrow {
     width: 28px;
   }
+  
+  .case-study-web-container.carousel-container {
+    margin-top: 5%;
+  }
 
   /* .worldroamer-carousel-section .w-slider-dot,
   .kenzie-online-carousel .w-slider-dot,
