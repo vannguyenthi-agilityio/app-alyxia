@@ -1003,6 +1003,10 @@ p {
   background-image: url('../images/gradient1_1.svg');
 }
 
+.mobile-case-study-hero-section.dreamsave-hero {
+  background-image: url('../images/Rectangle.png');
+}
+
 .mobile-case-study-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1046,6 +1050,10 @@ p {
 
 .mobile-case-study-container.the-result {
   margin-top: 160px;
+}
+
+.mobile-case-study-container.dreamsave-tech-stack {
+  max-width: 840px;
 }
 
 .case-study-mobile-hero-row {
@@ -1094,6 +1102,10 @@ p {
   font-weight: 800;
 }
 
+.mobile-case-study-h1.dreamsave-text {
+  color: #0A2630;
+}
+
 .story-section {
   position: relative;
   height: 789px;
@@ -1108,6 +1120,10 @@ p {
   position: relative;
   z-index: -1;
   height: 600px;
+}
+
+.story-section.dreamsave-story {
+  height: 500px;
 }
 
 .the-story-header {
@@ -1189,6 +1205,10 @@ p {
   height: 1160px;
 }
 
+.ux-section.dreamsave {
+  height: auto;
+}
+
 .ux-header {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1267,6 +1287,10 @@ p {
   height: 2000px;
 }
 
+.app-design-and-features-section.dreamsave-app-design-and-features-section {
+  height: 2000px;
+}
+
 .centered-header {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -1298,6 +1322,10 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.feature-1-row.dreamsave {
+  max-height: 800px;
 }
 
 .feature-1-left-column {
@@ -1374,6 +1402,11 @@ p {
   justify-content: center;
 }
 
+.feature-2-left-column.dreamsave-feature-2-left-column {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .feature-2-right-column {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1417,6 +1450,21 @@ p {
   background-repeat: no-repeat;
 }
 
+.feature-2-rectangle-block {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: -1;
+  width: 587px;
+  height: 450px;
+  background-image: url('../images/Rectangle.png');
+  background-position: 0px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .feature-2-gradient-block.les-mills-gradient-block {
   width: 170%;
   height: auto;
@@ -1432,6 +1480,10 @@ p {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.feature-3-row.dreamsave-feature-3-row {
+  max-height: 850px;
 }
 
 .feature-3-left-column {
@@ -1568,6 +1620,10 @@ p {
   padding-top: 0px;
 }
 
+.tech-stack-section.dreamsave-tech-stack-section {
+  padding-bottom: 0px;
+}
+
 .tech-stack-row {
   width: 100%;
   max-width: 100%;
@@ -1660,6 +1716,12 @@ p {
   background-image: url('../images/Utilities.jpg');
   background-position: 50% 72%;
   background-size: cover;
+}
+
+.image-section-2.dreamsave-image-section-2 {
+  height: 500px;
+  background-image: url('../images/Group@2x.jpg');
+  background-position: 50% 50%;
 }
 
 .the-result-section {
@@ -2062,6 +2124,10 @@ p {
   max-width: 100%;
 }
 
+.case-study-paragraph-text.feature-1-text.dreamsave-text {
+  max-width: 80%;
+}
+
 .case-study-paragraph-text.feature-1-text.drum-feature-1-text {
   max-width: 90%;
 }
@@ -2100,6 +2166,10 @@ p {
 
 .case-study-paragraph-text.bose-paragraph-text {
   color: #fff;
+}
+
+.case-study-paragraph-text.dreamsave-text .case-study-h3 {
+  line-height: 80px;
 }
 
 .web-section-image {
@@ -2408,6 +2478,12 @@ p {
 
 .feature-3-image-1.paga {
   max-width: 100%;
+}
+
+.feature-3-image-1.dreamsave {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .section-image-1-1 {
@@ -2755,6 +2831,10 @@ p {
   color: #f2931e;
 }
 
+.h5.case-studies-link-text.dreamsave {
+  color: #68C7C1;
+}
+
 .header-number {
   margin-bottom: 0px;
 }
@@ -2804,6 +2884,10 @@ p {
 }
 
 .case-studies-link-block.link-to-client.bose {
+  width: auto;
+}
+
+.case-studies-link-block.link-to-client.dreamsave {
   width: auto;
 }
 
@@ -2934,9 +3018,9 @@ p {
   max-width: 120%;
 }
 
-.mobile-case-study-hero-image.dreamsave-hero {
-  max-width: 180%;
-  margin-bottom: -130%;
+.mobile-case-study-hero-image.dreamsave-hero-image {
+  position: relative;
+  width: 109%;
 }
 
 .image-section-1-bg {
@@ -3147,6 +3231,13 @@ p {
   grid-template-rows: auto auto auto auto;
 }
 
+.tech-stack-grid.dreamsave-tech-stack-grid {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
 .tech-stack-logo {
   max-width: 50%;
 }
@@ -3208,7 +3299,7 @@ p {
 }
 
 .tech-stack-logo.docker {
-  max-width: 35%;
+  max-width: 40%;
 }
 
 .tech-stack-logo.docker.drum-tech-stack-logo {
@@ -3283,6 +3374,18 @@ p {
 
 .tech-stack-logo.glide {
   max-width: 60%;
+}
+
+.tech-stack-logo.spring-boot {
+  max-width: 40%;
+}
+
+.tech-stack-logo.kubernetes {
+  max-width: 40%;
+}
+
+.tech-stack-logo.sonarqube {
+  max-width: 70%;
 }
 
 .our-clients-text {
@@ -3447,6 +3550,9 @@ p {
   .mobile-case-study-container.the-result.drum-the-result {
     margin-bottom: 80px;
   }
+  .mobile-case-study-hero-section.dreamsave-hero {
+    height: 460px;
+  }
   .case-study-mobile-hero-right-column.les-mills-mobile-hero-right-column {
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -3461,6 +3567,9 @@ p {
   }
   .story-section {
     height: 720px;
+  }
+  .story-section.dreamsave-story {
+    height: 320px;
   }
   .image-section-1.drum-image-section-1 {
     height: 430px;
@@ -3483,6 +3592,10 @@ p {
   }
   .app-design-and-features-section.drum-app-design-and-features-section {
     height: 1600px;
+  }
+  .app-design-and-features-section.dreamsave-app-design-and-features-section {
+    height: auto;
+    padding-top: 30px;
   }
   .feature-1-row {
     max-height: 340px;
@@ -3539,9 +3652,16 @@ p {
     right: 40%;
     height: 290px;
   }
+  .feature-2-rectangle-block {
+    right: 40%;
+    height: 290px;
+  }
   .feature-3-row {
     max-height: 280px;
     margin-top: 120px;
+  }
+  .feature-3-row.dreamsave-feature-3-row {
+    margin-top: 80px;
   }
   .feature-3-left-column {
     -webkit-box-pack: center;
@@ -3579,6 +3699,10 @@ p {
     padding-top: 60px;
   }
   .tech-stack-section.drum-tech-stack-section {
+    height: auto;
+    padding-top: 120px;
+  }
+  .tech-stack-section.dreamsave-tech-stack-section {
     height: auto;
     padding-top: 120px;
   }
@@ -3897,6 +4021,9 @@ p {
     max-width: 130%;
     margin-top: 40%;
   }
+  .mobile-case-study-hero-image.dreamsave-hero {
+    left: 0;
+  }
   .react {
     width: 80px;
   }
@@ -4186,6 +4313,9 @@ p {
   .mobile-case-study-hero-section.drum-hero-section {
     height: 94vh;
   }
+  .mobile-case-study-hero-section.dreamsave-hero {
+    height: 568px;
+  }
   .mobile-case-study-container {
     display: block;
   }
@@ -4234,6 +4364,9 @@ p {
   .case-study-mobile-hero-right-column.drum-cast-study-mobile-hero-right-column {
     height: auto;
   }
+  .case-study-mobile-hero-right-column.dreamsave-cast-study-mobile-hero-right-column {
+    height: auto;
+  }
   .case-study-name-and-description {
     margin-top: 0px;
   }
@@ -4252,6 +4385,10 @@ p {
     padding-top: 80px;
   }
   .story-section.drum-story-section {
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .story-section.dreamsave-story {
     height: auto;
     padding-bottom: 80px;
   }
@@ -4284,6 +4421,9 @@ p {
   .triangle-gradient {
     width: 400%;
     max-width: 400%;
+  }
+  .triangle-gradient.dreamsave-triangle-gradient {
+    bottom: 50px;
   }
   .app-design-and-features-section {
     height: auto;
@@ -4478,6 +4618,10 @@ p {
     padding-top: 160px;
     padding-bottom: 0px;
   }
+  .tech-stack-section.dreamsave-tech-stack-section {
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
   .tech-stack-row {
     margin-top: 40px;
   }
@@ -4511,6 +4655,9 @@ p {
     height: 210px;
   }
   .image-section-2.drum-image-section-2 {
+    height: 200px;
+  }
+  .image-section-2.dreamsave-image-section-2 {
     height: 200px;
   }
   .the-result-section {
@@ -4867,6 +5014,11 @@ p {
   .feature-3-image-1.paga {
     position: static;
   }
+  .feature-3-image-1.dreamsave {
+    position: static;
+    width: 100%;
+    max-width:160px;
+  }
   .section-image-1-1 {
     max-width: 25%;
   }
@@ -5057,6 +5209,9 @@ p {
     max-width: 100%;
     margin-bottom: 20%;
   }
+  .mobile-case-study-hero-image.dreamsave-hero-image {
+    width: auto;
+  }
   .image-section-1-bg {
     max-width: none;
   }
@@ -5114,6 +5269,12 @@ p {
   .tech-stack-grid.drum-tech-stack-grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+  .tech-stack-grid.dreamsave-tech-stack-grid {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
   }
   .tech-stack-logo {
     max-width: 40%;
@@ -7507,6 +7668,15 @@ p {
   font-style: normal;
 }
 
+@media (min-width: 992px) {
+  .image-section-2.dreamsave-image-section-2 {
+    margin-top: 300px;
+  }
+  .feature-3-image-1.dreamsave {
+    width: 50%;
+  }
+}
+
 @media (min-width: 1600px) {
   .image-section-2.paga,
   .image-section-1.drum-image-section-1,
@@ -7577,6 +7747,20 @@ p {
     /* height: 700px; */
   }
 
+  .ux-section.dreamsave {
+    height: 1060px;
+    margin-bottom: 240px;
+  }
+
+  .triangle-gradient.dreamsave-triangle-gradient {
+    width: 100%;
+    bottom: -24%;
+  }
+
+  .mobile-case-study-hero-image.dreamsave-hero-image {
+    left: 15%;
+    max-width: 109%;
+  }
 }
 
 /* @media (min-width: 2435px) {
