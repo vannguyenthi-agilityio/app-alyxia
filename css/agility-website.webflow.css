@@ -7787,3 +7787,20 @@ p {
     opacity: 1;
   }
 } */
+
+/* Cookies Consent */
+.cc-nb-changep {
+  display: none;
+}
+#termsfeed-com---nb {
+  max-width: 100%;
+  width: 100%;
+}
+#termsfeed-com---nb .cc-nb-main-container {
+  padding: 1rem;
+  text-align: center;
+}
+.termsfeed-com---palette-light .cc-nb-okagree,
+.termsfeed-com---palette-light .cc-nb-reject {
+  background-color: #0a2630 !important;
+}
