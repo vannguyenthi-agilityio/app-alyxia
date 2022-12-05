@@ -7637,36 +7637,42 @@ p {
   src: url('../fonts/Helvetica-Neu-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeue-Thin.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
   src: url('../fonts/HelveticaNeueHv.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
+  font-display: swap;
 }
 
 @media (min-width: 992px) {
