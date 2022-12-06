@@ -724,6 +724,7 @@ p {
 .youtube {
   z-index: 0;
   height: 100%;
+  display: none;
 }
 
 .video-cover {
@@ -811,6 +812,10 @@ p {
   width: 100%;
   height: 100%;
   margin-top: -60px;
+}
+
+.video-block:hover .youtube {
+  display: block;
 }
 
 .case-study-2-image {
