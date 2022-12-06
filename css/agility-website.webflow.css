@@ -7634,42 +7634,54 @@ p {
 
 @font-face {
   font-family: 'Helveticaneue';
-  src: url('../fonts/Helvetica-Neu-Bold.ttf') format('truetype');
+  src: url('../fonts/Helvetica-Neu-Bold.ttf') format('truetype'),
+  url('../fonts/Helvetica-Neu-Bold.woff') format('woff'),
+  url('../fonts/Helvetica-Neu-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
-  src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+  src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype'),
+      url('../fonts/HelveticaNeue-Light.woff') format('woff'),
+      url('../fonts/HelveticaNeue-Light.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
-  src: url('../fonts/HelveticaNeue-Medium.ttf') format('truetype');
+  src: url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'),
+      url('../fonts/HelveticaNeue-Medium.woff') format('woff'),
+      url('../fonts/HelveticaNeue-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
-  src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+  src: url('../fonts/HelveticaNeue.ttf') format('truetype'),
+  url('../fonts/HelveticaNeue.woff') format('woff'),
+  url('../fonts/HelveticaNeue.woff2') format('woff2');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
-  src: url('../fonts/HelveticaNeue-Thin.ttf') format('truetype');
+  src: url('../fonts/HelveticaNeue-Thin.ttf') format('truetype'),
+       url('../fonts/HelveticaNeue-Thin.woff') format('woff'),
+       url('../fonts/HelveticaNeue-Thin.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Helveticaneue';
-  src: url('../fonts/HelveticaNeueHv.ttf') format('truetype');
+  src: url('../fonts/HelveticaNeueHv.ttf') format('truetype'),
+       url('../fonts/HelveticaNeueHv.woff') format('woff'),
+       url('../fonts/HelveticaNeueHv.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
