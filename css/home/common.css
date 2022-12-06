@@ -1,0 +1,91 @@
+/* Flex */
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+/* Position */
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+/* Backgound color*/
+.bg-light {
+  background-color: #fff;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+/* Z-index */
+.z-index-0 { 
+  z-index: 0;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-5 {
+  z-index: 5;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-20 {
+  z-index: 20;
+}
+
+.z-index-70 {
+  z-index: 70;
+}
+
+/* Width */
+.w-full {
+  width: 100%;
+}
+
+/* Height */
+.h-full {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
