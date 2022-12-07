@@ -7633,7 +7633,7 @@ p {
 }
 
 @font-face {
-  font-family: 'Helveticaneue';
+  font-family: 'Helveticaneue-Neu-Bold';
   src: url('../fonts/Helvetica-Neu-Bold.ttf') format('truetype'),
   url('../fonts/Helvetica-Neu-Bold.woff') format('woff'),
   url('../fonts/Helvetica-Neu-Bold.woff2') format('woff2');
@@ -7642,7 +7642,7 @@ p {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Helveticaneue';
+  font-family: 'HelveticaNeue-Light';
   src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype'),
       url('../fonts/HelveticaNeue-Light.woff') format('woff'),
       url('../fonts/HelveticaNeue-Light.woff2') format('woff2');
@@ -7651,7 +7651,7 @@ p {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Helveticaneue';
+  font-family: 'HelveticaNeue-Medium';
   src: url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'),
       url('../fonts/HelveticaNeue-Medium.woff') format('woff'),
       url('../fonts/HelveticaNeue-Medium.woff2') format('woff2');
@@ -7669,7 +7669,7 @@ p {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Helveticaneue';
+  font-family: 'HelveticaNeue-Thin';
   src: url('../fonts/HelveticaNeue-Thin.ttf') format('truetype'),
        url('../fonts/HelveticaNeue-Thin.woff') format('woff'),
        url('../fonts/HelveticaNeue-Thin.woff2') format('woff2');
@@ -7678,7 +7678,7 @@ p {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Helveticaneue';
+  font-family: 'HelveticaneueHv';
   src: url('../fonts/HelveticaNeueHv.ttf') format('truetype'),
        url('../fonts/HelveticaNeueHv.woff') format('woff'),
        url('../fonts/HelveticaNeueHv.woff2') format('woff2');
