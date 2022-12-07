@@ -1,0 +1,88 @@
+/* Style for home page */
+
+.navbar {
+  height: 60px;
+}
+
+.container {
+  max-width: var(--maxWContainer);
+}
+
+.brand {
+  max-width: 108px;
+  margin-left: 24px;
+}
+
+.nav-link {
+  transition: color 200ms ease;
+}
+
+.nav-link:hover {
+  color: var(--grayOpacity50);
+}
+
+.nav-link.w--current {
+  color: var(--gray);
+}
+
+.nav-link.w--current:hover {
+  color: var(--grayOpacity50);
+}
+
+.nav-underline {
+  width: 45px;
+  height: 2px;
+  margin-top: 16px;
+}
+
+.menu-button-home.w--open {
+  background-color: var(--ligth);
+  color: var(--grayOpacity50);
+}
+
+.video-section {
+  height: var(--heightViewport);
+}
+
+.video-text {
+  margin-bottom: 40px;
+  font-size: 120px;
+  line-height: 120px;
+}
+
+.video-block {
+  margin-top: -60px;
+}
+
+.close-link-block {
+  left: auto;
+  top: 120px;
+  right: 80px;
+  bottom: auto;
+}
+
+.video-container {
+  max-width: var(--maxWContainer);
+}
+
+.scroll-indicator-block {
+  bottom: 0px;
+}
+
+.indicator-line {
+  left: auto;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  width: 2px;
+  height: 60px;
+}
+
+.indicator-line.home {
+  position: static;
+}
+
+.discover-text-block {
+  margin-bottom: 4px;
+  line-height: 22px;
+}
