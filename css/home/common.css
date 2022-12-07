@@ -1,7 +1,14 @@
 :root {
-  --ligth:#fff;
+  --light:#fff;
   --dark: #000;
   --red: #f24a51;
+  --caseOne: #f7931e;
+  --caseTwo: #5fffd2;
+  --caseThree: #079be8;
+  --caseFive: #584efe;
+  --caseSeven: #00366b;
+  --caseEight: #f8e9c5;
+  --caseNine: #e63e89;
   --colorPrimary: #0a2630;
   --grayOpacity50: rgba(10, 38, 48, 0.5);
 
@@ -70,7 +77,7 @@
 
 /* Backgound color*/
 .bg-light {
-  background-color: var(--ligth);
+  background-color: var(--light);
 }
 
 .bg-dark {
@@ -162,6 +169,10 @@
 /* Font weight */
 .f-weight-500 {
   font-weight: 500;
+}
+
+.f-weight-700 {
+  font-weight: 700;
 }
 
 .f-weight-800 {

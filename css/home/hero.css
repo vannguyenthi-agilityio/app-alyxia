@@ -1,5 +1,3 @@
-/* Style for home page */
-
 .navbar {
   height: 60px;
 }
@@ -17,27 +15,14 @@
   transition: color 200ms ease;
 }
 
-.nav-link:hover {
-  color: var(--grayOpacity50);
-}
-
 .nav-link.w--current {
   color: var(--gray);
-}
-
-.nav-link.w--current:hover {
-  color: var(--grayOpacity50);
 }
 
 .nav-underline {
   width: 45px;
   height: 2px;
   margin-top: 16px;
-}
-
-.menu-button-home.w--open {
-  background-color: var(--ligth);
-  color: var(--grayOpacity50);
 }
 
 .video-section {

@@ -1,0 +1,17 @@
+.nav-link:hover,
+.nav-link.w--current:hover {
+  color: var(--grayOpacity50);
+}
+
+.menu-button-home.w--open {
+  background-color: var(--ligth);
+  color: var(--grayOpacity50);
+}
+
+.youtube {
+  display: none;
+}
+
+.video-block:hover .youtube {
+  display: block;
+}
