@@ -813,6 +813,10 @@ p {
   margin-top: -60px;
 }
 
+.video-block:hover .youtube {
+  display: block;
+}
+
 .case-study-2-image {
   position: absolute;
   left: auto;
