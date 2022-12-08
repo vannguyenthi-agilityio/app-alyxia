@@ -11,9 +11,10 @@ var player;
 var playButton = document.getElementById("play");
 var pauseButton = document.getElementById("close");
 var iframe = document.getElementById("player");
+
 playButton.addEventListener("click", play);
 pauseButton.addEventListener("click",pause);
-iframe.setAttribute('src', 'https://www.youtube.com/embed/EwOuGsrYmGA?enablejsapi=1');
+
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
@@ -31,5 +32,6 @@ function pause() {
   player.pauseVideo();
 }
 function play() {
+  iframe.setAttribute('src', 'https://www.youtube.com/embed/EwOuGsrYmGA?enablejsapi=1')
   player.playVideo();
 }
