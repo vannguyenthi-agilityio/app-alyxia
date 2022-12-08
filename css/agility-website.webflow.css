@@ -724,7 +724,6 @@ p {
 .youtube {
   z-index: 0;
   height: 100%;
-  display: none;
 }
 
 .video-cover {
