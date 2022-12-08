@@ -14,6 +14,7 @@ var iframe = document.getElementById("player");
 playButton.addEventListener("click", play);
 pauseButton.addEventListener("click",pause);
 iframe.setAttribute('src', 'https://www.youtube.com/embed/EwOuGsrYmGA?enablejsapi=1');
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     videoId: 'EwOuGsrYmGA',
@@ -23,9 +24,9 @@ function onYouTubeIframeAPIReady() {
   });
 }
 // 4. The API will call this function when the video player is ready.
-// function onPlayerReady(event) {
-//   // play();
-// }
+function onPlayerReady(event) {
+  // play();
+}
 function pause() {
   player.pauseVideo();
 }
