@@ -3,8 +3,8 @@
   --fontThin: HelveticaNeue-Thin;
   --fontLight: HelveticaNeue-Light;
   --fontMedium: HelveticaNeue-Medium;
-  --fontBold: HelveticaneueNeu-Bold;
-  --fontExtraBold: Helveticaneue-ExtraBold;
+  --fontBold: HelveticaNeu-Bold;
+  --fontExtraBold: HelveticaNeue-ExtraBold;
 }
 
 .w-layout-grid {
@@ -36,21 +36,19 @@ h1 {
 h2 {
   margin-top: 0px;
   margin-bottom: 24px;
-  font-family: Helveticaneue, sans-serif;
+  font-family: var(--fontBold), sans-serif;
   color: #0a2630;
   font-size: 46px;
   line-height: 54px;
-  font-weight: 700;
 }
 
 h3 {
   margin-top: 0px;
   margin-bottom: 16px;
-  font-family: Helveticaneue, sans-serif;
+  font-family: var(--fontBold), sans-serif;
   color: #0a2630;
   font-size: 28px;
   line-height: 39px;
-  font-weight: 700;
   letter-spacing: 0.33px;
 }
 
@@ -65,11 +63,15 @@ h4 {
 
 p {
   margin-bottom: 0px;
-  font-family: Helveticaneue, sans-serif;
+  font-family: var(--fontLight), sans-serif;
   color: #0a2630;
   font-size: 22px;
   line-height: 33px;
   letter-spacing: 0.26px;
+}
+
+p strong {
+  font-family: var(--fontBold), sans-serif;
 }
 
 .video-section {
@@ -100,7 +102,7 @@ p {
 .video-text {
   width: 100%;
   margin-bottom: 40px;
-  font-family: HelveticaneueHv, sans-serif;
+  font-family: var(--fontExtraBold), sans-serif;
   color: #0a2630;
   font-size: 120px;
   line-height: 120px;
@@ -2663,7 +2665,7 @@ p {
 
 .link {
   color: #3570c6;
-  font-weight: 500;
+  font-family: var(--fontMedium);
   text-decoration: none;
 }
 
@@ -2789,11 +2791,10 @@ p {
 .h5 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: Helveticaneue, sans-serif;
+  font-family: var(--fontMedium), sans-serif;
   color: #849297;
   font-size: 22px;
   line-height: 33px;
-  font-weight: 500;
   letter-spacing: 0.26px;
 }
 
@@ -7633,10 +7634,10 @@ p {
 }
 
 @font-face {
-  font-family: 'HelveticaneueNeu-Bold';
-  src: url('../fonts/Helvetica-Neu-Bold.ttf') format('truetype'),
-  url('../fonts/Helvetica-Neu-Bold.woff') format('woff'),
-  url('../fonts/Helvetica-Neu-Bold.woff2') format('woff2');
+  font-family: 'HelveticaNeu-Bold';
+  src: url('../fonts/HelveticaNeu-Bold.ttf') format('truetype'),
+  url('../fonts/HelveticaNeu-Bold.woff') format('woff'),
+  url('../fonts/HelveticaNeu-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -7678,10 +7679,10 @@ p {
   font-display: swap;
 }
 @font-face {
-  font-family: 'Helveticaneue-ExtraBold';
-  src: url('../fonts/HelveticaNeueHv.ttf') format('truetype'),
-       url('../fonts/HelveticaNeueHv.woff') format('woff'),
-       url('../fonts/HelveticaNeueHv.woff2') format('woff2');
+  font-family: 'HelveticaNeue-ExtraBold';
+  src: url('../fonts/HelveticaNeue-ExtraBold.ttf') format('truetype'),
+       url('../fonts/HelveticaNeue-ExtraBold.woff') format('woff'),
+       url('../fonts/HelveticaNeue-ExtraBold.woff2') format('woff2');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
