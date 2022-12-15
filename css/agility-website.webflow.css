@@ -2795,7 +2795,7 @@ p strong {
 .h5 {
   margin-top: 0px;
   margin-bottom: 0px;
-  font-family: var(--fontMedium), sans-serif;
+  font-family: var(--fontLight), sans-serif;
   color: #849297;
   font-size: 22px;
   line-height: 33px;
@@ -2808,7 +2808,7 @@ p strong {
   text-decoration: none;
 }
 .carousel-section .h5.case-studies-link-text {
-  color: #fff; 
+  color: #fff;
 }
 
 /* .h5.case-studies-link-text.bose {
@@ -2923,7 +2923,7 @@ p strong {
   color: #f3f6f7;
   font-size: 162px;
   line-height: 200px;
-  font-weight: 700;
+  font-family: var(--fontBold);
   letter-spacing: -2px;
 }
 
@@ -7740,7 +7740,7 @@ p strong {
   img.link-arrow {
     width: 28px;
   }
-  
+
   .case-study-web-container.carousel-container {
     margin-top: 5%;
   }
@@ -7752,7 +7752,7 @@ p strong {
     background: #fff;
     opacity: 0.6;
   }
-  
+
   .worldroamer-carousel-section .w-slider-dot.w-active,
   .kenzie-online-carousel .w-slider-dot.w-active,
   .cheapism-carousel-section .w-slider-dot.w-active,
@@ -7804,7 +7804,7 @@ p strong {
     background: #fff;
     opacity: 0.6;
   }
-  
+
   .upperroom-carousel-section .w-slider-dot.w-active {
     background: #fff;
     opacity: 1;
