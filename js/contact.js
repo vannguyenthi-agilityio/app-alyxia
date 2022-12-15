@@ -3,7 +3,9 @@ let contactUs = document.getElementById("contact-us");
 
 function setRecaptcha() {
   if(!recaptchaContactForm) {
-    recaptchaContactForm.setAttribute('data-netlify-recaptcha', 'true');
+    divRecaptcha = document.createElement("div");
+    divRecaptcha.setAttribute('data-netlify-recaptcha', 'true');
+    recaptchaContactForm.appendChild(divRecaptcha);
   }
 }
 
