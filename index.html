@@ -251,7 +251,7 @@
             <div id="w-node-534512e44d62-ffa1d91c" class="label-and-field"><label for="Tell-us-about-your-product" class="field-label">Tell us about your product</label><textarea required="" maxlength="5000" id="Tell-us-about-your-product" name="Tell-us-about-your-product" data-name="Tell us about your product" class="text-area w-input"></textarea></div>
             <div id="w-node-534512e44d57-ffa1d91c" class="label-and-field"><label for="How-did-you-hear-about-us" class="field-label">How did you hear about Agility?</label><input type="text" class="text-field w-input" maxlength="256" name="How-did-you-hear-about-us" data-name="How-did-you-hear-about-us" id="How-did-you-hear-about-us"></div>
           </div>
-          <div id="recaptcha-block" class="g-recaptcha"></div>
+          <div id="recaptcha-block"></div>
           <input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button"></form>
         <div class="success-message w-form-done">
           <div class="success-text">Thank you! Your submission has been received!</div>
@@ -283,15 +283,12 @@
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/video-hero.js" charset="UTF-8"></script>
   <script>
-    // window.addEventListener('DOMContentLoaded', (event) => {
-    //   let recaptchaScript = document.createElement('script')
-    //   recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
-    //   document.getElementsByTagName('body')[0].appendChild(recaptchaScript)
-    //   document.getElementById('recaptcha-block').setAttribute('data-netlify-recaptcha', 'true')
-    // });
-    const recaptcha = document.createElement('script')
-    recaptcha.setAttribute('src', 'https://www.google.com/recaptcha/api.js')
-    document.querySelector('.g-recaptcha').parentElement.appendChild(recaptcha);
+    window.addEventListener('DOMContentLoaded', (event) => {
+      let recaptchaScript = document.createElement('script');
+      recaptchaScript.setAttribute('src', 'https://www.google.com/recaptcha/api.js');
+      document.getElementsByTagName('body')[0].appendChild(recaptchaScript);
+      document.getElementById('recaptcha-block').setAttribute('data-netlify-recaptcha', 'true');
+    });
   </script>
 </body>
 </html>
