@@ -251,7 +251,9 @@
             <div id="w-node-534512e44d62-ffa1d91c" class="label-and-field"><label for="Tell-us-about-your-product" class="field-label">Tell us about your product</label><textarea required="" maxlength="5000" id="Tell-us-about-your-product" name="Tell-us-about-your-product" data-name="Tell us about your product" class="text-area w-input"></textarea></div>
             <div id="w-node-534512e44d57-ffa1d91c" class="label-and-field"><label for="How-did-you-hear-about-us" class="field-label">How did you hear about Agility?</label><input type="text" class="text-field w-input" maxlength="256" name="How-did-you-hear-about-us" data-name="How-did-you-hear-about-us" id="How-did-you-hear-about-us"></div>
           </div>
-          <div id="recaptcha-block"></div><input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button" id="submit">
+          <div id="recaptcha-block"></div>
+          <div class="g-recaptcha" data-sitekey="6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" data-callback="correctCaptcha"></div>
+          <input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button" id="submit">
         </form>
         <div class="success-message w-form-done">
           <div class="success-text">Thank you! Your submission has been received!</div>
@@ -282,29 +284,35 @@
   <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/video-hero.js" charset="UTF-8"></script>
+  <!-- <script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js" charset="UTF-8"></script> -->
+  <script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" charset="UTF-8"></script>
+  
   <script>
-    // window.addEventListener('DOMContentLoaded', (event) => {
-    window.onscroll = (event) => {
-      let recaptchaBlock = document.getElementById('recaptcha-block')
-      let loadedNetlify = recaptchaBlock.getAttribute('data-netlify-recaptcha') === 'true'
-      let contactUsForm = document.getElementById('contact-us')
-      console.log(recaptchaBlock)
-      if (!loadedNetlify && (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - contactUsForm.offsetHeight)) {
-        console.log('not load netlify')
-        recaptchaBlock.setAttribute('data-netlify-recaptcha', 'true')
-      }
-      //   // Load js
-      //   let recaptchaScript = document.createElement('script')
-      //   recaptchaScript.setAttribute('src', 'https://www.gstatic.com/recaptcha/releases/pn3ro1xnhf4yB8qmnrhh9iD2/recaptcha__en.js')
-      //   document.getElementsByTagName('body')[0].appendChild(recaptchaScript)
-      //   let contactUsForm = document.getElementById('contact-us')
-      //   
-      //   contactUsForm.setAttribute('data-netlify-recaptcha', 'true')
-      //   contactUsForm.setAttribute('netlify-honeypot', 'bot-field')
-      //   contactUsForm.setAttribute('data-netlify', 'true')
-      //   console.log('DOMContentLoaded', contactUsForm)
-      // }
+    var correctCaptcha = function(response) {
+      alert(response);
     };
+    // window.addEventListener('DOMContentLoaded', (event) => {
+    // window.onscroll = (event) => {
+    //   let recaptchaBlock = document.getElementById('recaptcha-block')
+    //   let loadedNetlify = recaptchaBlock.getAttribute('data-netlify-recaptcha') === 'true'
+    //   let contactUsForm = document.getElementById('contact-us')
+    //   console.log(recaptchaBlock)
+    //   if (!loadedNetlify && (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - contactUsForm.offsetHeight)) {
+    //     console.log('not load netlify')
+    //     recaptchaBlock.setAttribute('data-netlify-recaptcha', 'true')
+    //   }
+    //   //  Load js
+    //     let recaptchaScript = document.createElement('script')
+    //     recaptchaScript.setAttribute('src', 'https://www.gstatic.com/recaptcha/releases/pn3ro1xnhf4yB8qmnrhh9iD2/recaptcha__en.js')
+    //     document.getElementsByTagName('body')[0].appendChild(recaptchaScript)
+    //     let contactUsForm = document.getElementById('contact-us')
+        
+    //     contactUsForm.setAttribute('data-netlify-recaptcha', 'true')
+    //     contactUsForm.setAttribute('netlify-honeypot', 'bot-field')
+    //     contactUsForm.setAttribute('data-netlify', 'true')
+    //     console.log('DOMContentLoaded', contactUsForm)
+    //   }
+    // };
   </script>
 </body>
 </html>
