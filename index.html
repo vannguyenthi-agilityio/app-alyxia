@@ -276,24 +276,26 @@
     </div>
   </div>
   <script defer src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script defer src="js/webflow.js" type="text/javascript"></script>
+  <!-- <script defer src="js/webflow.js" type="text/javascript"></script> -->
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/video-hero.js" charset="UTF-8"></script>
   <script>
-    // window.addEventListener('DOMContentLoaded', (event) => {
-    //   // Load js
-    //   let recaptchaScript = document.createElement('script')
-    //   recaptchaScript.setAttribute('src', 'https://www.gstatic.com/recaptcha/releases/pn3ro1xnhf4yB8qmnrhh9iD2/recaptcha__en.js')
-    //   document.getElementsByTagName('body')[0].appendChild(recaptchaScript)
-    //   let contactUsForm = document.getElementById('contact-us')
-    //   document.getElementById('recaptcha-block').setAttribute('data-netlify-recaptcha', 'true')
-    //   contactUsForm.setAttribute('data-netlify-recaptcha', 'true')
-    //   contactUsForm.setAttribute('netlify-honeypot', 'bot-field')
-    //   contactUsForm.setAttribute('data-netlify', 'true')
-    //   console.log('DOMContentLoaded', contactUsForm)
-    // });
+    window.addEventListener('DOMContentLoaded', (event) => {
+      // Load js
+      // let recaptchaScript = document.createElement('script')
+      // recaptchaScript.setAttribute('src', 'https://www.gstatic.com/recaptcha/releases/pn3ro1xnhf4yB8qmnrhh9iD2/recaptcha__en.js')
+      // document.getElementsByTagName('body')[0].appendChild(recaptchaScript)
+      // let contactUsForm = document.getElementById('contact-us')
+      // document.getElementById('recaptcha-block').setAttribute('data-netlify-recaptcha', 'true')
+      // contactUsForm.setAttribute('data-netlify-recaptcha', 'true')
+      // contactUsForm.setAttribute('netlify-honeypot', 'bot-field')
+      // contactUsForm.setAttribute('data-netlify', 'true')
+      // console.log('DOMContentLoaded', contactUsForm)
+      let deferScript = document.createElement('script').setAttribute('src', 'js/webflow.js')
+      document.getElementsByTagName('body')[0].appendChild(deferScript)
+    });
   </script>
 </body>
 </html>
