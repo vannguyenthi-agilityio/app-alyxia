@@ -293,7 +293,8 @@
       // contactUsForm.setAttribute('netlify-honeypot', 'bot-field')
       // contactUsForm.setAttribute('data-netlify', 'true')
       // console.log('DOMContentLoaded', contactUsForm)
-      let deferScript = document.createElement('script').setAttribute('src', 'js/webflow.js')
+      let deferScript = document.createElement('script')
+      deferScript.setAttribute('src', 'js/webflow.js')
       document.getElementsByTagName('body')[0].appendChild(deferScript)
     });
   </script>
