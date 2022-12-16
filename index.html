@@ -287,7 +287,7 @@
     window.onscroll = (event) => {
       let recaptchaBlock = document.getElementById('recaptcha-block')
       let loadedNetlify = recaptchaBlock.getAttribute('data-netlify-recaptcha') === 'true'
-      // let contactUsForm = document.getElementById('contact-us')
+      let contactUsForm = document.getElementById('contact-us')
       console.log(recaptchaBlock)
       if (!loadedNetlify && (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - contactUsForm.offsetHeight)) {
         console.log('not load netlify')
