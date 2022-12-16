@@ -286,10 +286,13 @@
     // window.addEventListener('DOMContentLoaded', (event) => {
     window.onscroll = (event) => {
       let recaptchaBlock = document.getElementById('recaptcha-block')
-      recaptchaBlock.setAttribute('data-netlify-recaptcha', 'true')
+      let loadedNetlify = recaptchaBlock.getAttribute('data-netlify-recaptcha') === 'true'
       // let contactUsForm = document.getElementById('contact-us')
-      // let loadedNetlify = contactUsForm.getAttribute('data-netlify-recaptcha') === 'true'
-      // if (!loadedNetlify && (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - contactUsForm.offsetHeight)) {
+      console.log(recaptchaBlock)
+      if (!loadedNetlify && (window.innerHeight + window.scrollY) >= (document.body.offsetHeight - contactUsForm.offsetHeight)) {
+        console.log('not load netlify')
+        recaptchaBlock.setAttribute('data-netlify-recaptcha', 'true')
+      }
       //   // Load js
       //   let recaptchaScript = document.createElement('script')
       //   recaptchaScript.setAttribute('src', 'https://www.gstatic.com/recaptcha/releases/pn3ro1xnhf4yB8qmnrhh9iD2/recaptcha__en.js')
