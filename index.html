@@ -291,8 +291,12 @@
     
     var io = new IntersectionObserver(
       entries => {
-        // console.log(entries[0]);
-        if (entries[0].isIntersecting) {
+        console.log(entries[0]);
+        let gStaticRecaptcha = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')[0]
+        console.log(gStaticRecaptcha)
+        gStaticRecaptcha.defer = true;
+        gStaticRecaptcha.async = false;
+        // if (entries[0].isIntersecting) {
           // var recaptchaScript = document.createElement('script');
           // recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?hl=en';
           // recaptchaScript.defer = true;
@@ -302,15 +306,13 @@
           // recaptchaBlock.setAttribute('data-netlify-recaptcha', 'true')
         
           // Defer src="https://www.gstatic.com/recaptcha/releases/
-          let gStaticRecaptcha = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/releases/"]')
-          console.log(gStaticRecaptcha)
-          gStaticRecaptcha.defer = true;
-        }
+          
+        // }
       },
       {
         root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
         rootMargin: '0px',
-        threshold: 1.0
+        threshold: 0.1
       }
     );
     io.observe(initForm);
