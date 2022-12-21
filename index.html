@@ -292,9 +292,9 @@
       grecaptcha.render('captcha_container', {
         'sitekey': testSitekey
       });
-    }, 1000);
+    }, 50000);
     });
   </script>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </body>
 </html>
