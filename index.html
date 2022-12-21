@@ -287,7 +287,6 @@
   <script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js" charset="UTF-8"></script>
   
   <script>
-    
     let recaptchaBlock = document.getElementById('recaptcha-block')
     const docHead = document.head
     let recaptChaScript = ''
@@ -309,22 +308,7 @@
           gStaticRecaptchaTags.forEach(element => {
             recaptChaScript = element.getAttribute('src')
             docHead.removeChild(element)
-            // document.removeChild(element)
           });
-        }
-
-        if (iframeRecaptcha) {
-          var innerDoc = iframeRecaptcha.contentDocument || iframeRecaptcha.contentWindow.document;
-          console.log("iframeRecaptcha", iframeRecaptcha, innerDoc)
-          const recaptchaScript = innerDoc.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')[0]
-          recaptchaScript.src = recaptChaScript
-          recaptchaScript.defer = true;
-
-          const recaptchaCss = innerDoc.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
-          recaptchaCss.rel = "preload stylesheet"
-          recaptchaCss.onload = "this.onload=null"
-
-          console.log('iframeRecaptcha', recaptchaScript, recaptchaCss)
         }
 
         if (entries[0].isIntersecting) {
@@ -333,16 +317,6 @@
           gStaticRecaptcha.src = recaptChaScript
           gStaticRecaptcha.defer = true;
           docHead.appendChild(gStaticRecaptcha)
-          
-          // if (recaptChaCss) {
-          //   let gStaticRecaptchaCss = document.createElement('link')
-          //   gStaticRecaptchaCss.href = recaptChaCss
-          //   gStaticRecaptchaCss.as = "style"
-          //   gStaticRecaptchaCss.rel = "preload stylesheet"
-          //   gStaticRecaptchaCss.onload = "this.onload=null"
-          //   gStaticRecaptchaCss.type = "text/css"
-          //   docHead.appendChild(gStaticRecaptchaCss)
-          // }
         }
       },
       {
