@@ -287,7 +287,7 @@
   <script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js" charset="UTF-8"></script>
   
   <script>
-    // let initForm = document.getElementById('contact-us')
+    
     let recaptchaBlock = document.getElementById('recaptcha-block')
     const docHead = document.head
     let recaptChaScript = ''
@@ -296,7 +296,8 @@
       entries => {
         const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
         const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
-        console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0]);
+        let iframeRecaptcha = document.querySelectorAll('iframe[title="reCAPTCHA"]')[0]
+        console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0], iframeRecaptcha); 
         if (gStaticRecaptchaCss) {
           console.log('gStaticRecaptchaCss');
           recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
@@ -312,6 +313,19 @@
           });
         }
 
+        if (iframeRecaptcha) {
+          console.log("iframeRecaptcha", iframeRecaptcha)
+          const recaptchaScript = iframeRecaptcha.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')[0]
+          recaptchaScript.src = recaptChaScript
+          recaptchaScript.defer = true;
+
+          const recaptchaCss = iframeRecaptcha.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
+          recaptchaCss.rel = "preload stylesheet"
+          recaptchaCss.onload = "this.onload=null"
+
+          console.log('iframeRecaptcha', recaptchaScript, recaptchaCss)
+        }
+
         if (entries[0].isIntersecting) {
           console.log("isIntersecting")
           let gStaticRecaptcha = document.createElement('script')
@@ -319,15 +333,15 @@
           gStaticRecaptcha.defer = true;
           docHead.appendChild(gStaticRecaptcha)
           
-          if (recaptChaCss) {
-            let gStaticRecaptchaCss = document.createElement('link')
-            gStaticRecaptchaCss.href = recaptChaCss
-            gStaticRecaptchaCss.as = "style"
-            gStaticRecaptchaCss.rel = "preload stylesheet"
-            gStaticRecaptchaCss.onload = "this.onload=null"
-            gStaticRecaptchaCss.type = "text/css"
-            docHead.appendChild(gStaticRecaptchaCss)
-          }
+          // if (recaptChaCss) {
+          //   let gStaticRecaptchaCss = document.createElement('link')
+          //   gStaticRecaptchaCss.href = recaptChaCss
+          //   gStaticRecaptchaCss.as = "style"
+          //   gStaticRecaptchaCss.rel = "preload stylesheet"
+          //   gStaticRecaptchaCss.onload = "this.onload=null"
+          //   gStaticRecaptchaCss.type = "text/css"
+          //   docHead.appendChild(gStaticRecaptchaCss)
+          // }
         }
       },
       {
