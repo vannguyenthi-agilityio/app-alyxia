@@ -286,36 +286,56 @@
   <script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js" charset="UTF-8"></script>
   
   <script>
-    let initForm = document.getElementById('contact-us')
+    // let initForm = document.getElementById('contact-us')
     let recaptchaBlock = document.getElementById('recaptcha-block')
-    
+    const docHead = document.head
+    let recaptChaScript = ''
+    let recaptChaCss = ''
     var io = new IntersectionObserver(
       entries => {
-        console.log(entries[0]);
-        let gStaticRecaptcha = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')[0]
-        console.log(gStaticRecaptcha)
-        gStaticRecaptcha.defer = true;
-        gStaticRecaptcha.async = false;
-        // if (entries[0].isIntersecting) {
-          // var recaptchaScript = document.createElement('script');
-          // recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?hl=en';
-          // recaptchaScript.defer = true;
-          // document.body.appendChild(recaptchaScript);
+        const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
+        const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
+        console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0]);
+        if (gStaticRecaptchaCss) {
+          console.log('gStaticRecaptchaCss');
+          recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
+          docHead.removeChild(gStaticRecaptchaCss)
+        }
 
-          // Set true attribute for recaptcha block
-          // recaptchaBlock.setAttribute('data-netlify-recaptcha', 'true')
-        
-          // Defer src="https://www.gstatic.com/recaptcha/releases/
+        if (gStaticRecaptchaTags && gStaticRecaptchaTags.length > 0) {
+          console.log('gStaticRecaptchaTags');
+          gStaticRecaptchaTags.forEach(element => {
+            recaptChaScript = element.getAttribute('src')
+            docHead.removeChild(element)
+            // document.removeChild(element)
+          });
+        }
+
+        if (entries[0].isIntersecting) {
+          console.log("isIntersecting")
+          let gStaticRecaptcha = document.createElement('script')
+          gStaticRecaptcha.src = recaptChaScript
+          gStaticRecaptcha.defer = true;
+          docHead.appendChild(gStaticRecaptcha)
           
-        // }
+          if (recaptChaCss) {
+            let gStaticRecaptchaCss = document.createElement('link')
+            gStaticRecaptchaCss.href = recaptChaCss
+            gStaticRecaptchaCss.as = "style"
+            gStaticRecaptchaCss.rel = "preload stylesheet"
+            gStaticRecaptchaCss.onload = "this.onload=null"
+            gStaticRecaptchaCss.type = "text/css"
+            docHead.appendChild(gStaticRecaptchaCss)
+          }
+        }
       },
       {
         root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
         rootMargin: '0px',
-        threshold: 0.1
+        threshold: 1
       }
     );
-    io.observe(initForm);
+    io.observe(recaptchaBlock);
   </script>
 </body>
 </html>
