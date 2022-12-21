@@ -314,12 +314,13 @@
         }
 
         if (iframeRecaptcha) {
-          console.log("iframeRecaptcha", iframeRecaptcha)
-          const recaptchaScript = iframeRecaptcha.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')[0]
+          var innerDoc = iframeRecaptcha.contentDocument || iframeRecaptcha.contentWindow.document;
+          console.log("iframeRecaptcha", iframeRecaptcha, innerDoc)
+          const recaptchaScript = innerDoc.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')[0]
           recaptchaScript.src = recaptChaScript
           recaptchaScript.defer = true;
 
-          const recaptchaCss = iframeRecaptcha.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
+          const recaptchaCss = innerDoc.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
           recaptchaCss.rel = "preload stylesheet"
           recaptchaCss.onload = "this.onload=null"
 
