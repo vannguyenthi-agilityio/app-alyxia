@@ -197,53 +197,53 @@
       </div>
     </div>
   </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script defer src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script defer src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-<script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
-<script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
-<script defer type="text/javascript" src="/js/about-video-hero.js" charset="UTF-8"></script>
-<script>
-  let contactForm = document.getElementById('wf-form-about-contact-form')
-  var io = new IntersectionObserver(
-    entries => {
-      if (entries[0].isIntersecting) {
-        const gRecaptchaHref = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
-        const gStaticRecaptchaTags = document.querySelectorAll(`script[src^="${gRecaptchaHref}"]`)[0]
-        
-        if (gStaticRecaptchaTags) {
-          return;
-        }
-        let recaptchaCallback = document.createElement('script')
-        recaptchaCallback.type = 'text/javascript'
-        const code = `
-          var captcha;
-          var onloadCallback = function () {
-            captcha = grecaptcha.render('recaptcha-block', {
-              'sitekey': '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'
-            });
-          };
-          function VerifyCaptcha() {
-            console.log(grecaptcha.getResponseHeader(captcha));
-            return false;
+  <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
+  <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
+  <script defer type="text/javascript" src="/js/about-video-hero.js" charset="UTF-8"></script>
+  <script>
+    let contactForm = document.getElementById('wf-form-about-contact-form')
+    var io = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting) {
+          const gRecaptchaHref = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
+          const gStaticRecaptchaTags = document.querySelectorAll(`script[src^="${gRecaptchaHref}"]`)[0]
+          
+          if (gStaticRecaptchaTags) {
+            return;
           }
-        `;
-        recaptchaCallback.appendChild(document.createTextNode(code))
-        document.body.appendChild(recaptchaCallback);
+          let recaptchaCallback = document.createElement('script')
+          recaptchaCallback.type = 'text/javascript'
+          const code = `
+            var captcha;
+            var onloadCallback = function () {
+              captcha = grecaptcha.render('recaptcha-block', {
+                'sitekey': '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'
+              });
+            };
+            function VerifyCaptcha() {
+              console.log(grecaptcha.getResponseHeader(captcha));
+              return false;
+            }
+          `;
+          recaptchaCallback.appendChild(document.createTextNode(code))
+          document.body.appendChild(recaptchaCallback);
 
-        let gStaticRecaptcha = document.createElement('script')
-        gStaticRecaptcha.src = gRecaptchaHref
-        gStaticRecaptcha.defer = true;
-        document.body.appendChild(gStaticRecaptcha);
+          let gStaticRecaptcha = document.createElement('script')
+          gStaticRecaptcha.src = gRecaptchaHref
+          gStaticRecaptcha.defer = true;
+          document.body.appendChild(gStaticRecaptcha);
+        }
+      },
+      {
+        root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
+        rootMargin: '0px',
+        threshold: 1
       }
-    },
-    {
-      root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
-      rootMargin: '0px',
-      threshold: 1
-    }
-  );
-  io.observe(contactForm);
-</script>
+    );
+    io.observe(contactForm);
+  </script>
 </body>
 </html>
