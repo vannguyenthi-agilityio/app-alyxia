@@ -288,31 +288,9 @@
   
   <script>
     let contactForm = document.getElementById('contact-us')
-    // const docHead = document.head
-    // let recaptChaScript = ''
-    // let recaptChaCss = ''
     var io = new IntersectionObserver(
       entries => {
-        // const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
-        // const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
-        // let iframeRecaptcha = document.querySelectorAll('iframe[title="reCAPTCHA"]')[0]
-        // console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0], iframeRecaptcha); 
-        // if (gStaticRecaptchaCss) {
-        //   console.log('gStaticRecaptchaCss');
-        //   recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
-        //   docHead.removeChild(gStaticRecaptchaCss)
-        // }
-
-        // if (gStaticRecaptchaTags && gStaticRecaptchaTags.length > 0) {
-        //   console.log('gStaticRecaptchaTags');
-        //   gStaticRecaptchaTags.forEach(element => {
-        //     recaptChaScript = element.getAttribute('src')
-        //     docHead.removeChild(element)
-        //   });
-        // }
-
         if (entries[0].isIntersecting) {
-          console.log("isIntersecting")
           const gRecaptchaHref = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
           const gStaticRecaptchaTags = document.querySelectorAll(`script[src^="${gRecaptchaHref}"]`)[0]
           
