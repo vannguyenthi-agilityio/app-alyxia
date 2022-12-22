@@ -171,7 +171,8 @@
             <div id="w-node-2ddebecc9150-13a1d91d" class="label-and-field"><label class="field-label" for="phone">Phone (optional)</label><input type="tel" maxlength="256" name="Phone-2" data-name="Phone 2" id="Phone-2" aria-label="phone" class="text-field w-input"></div>
             <div id="w-node-2ddebecc9154-13a1d91d" class="label-and-field"><label for="Tell-us-about-your-product" class="field-label">Tell us about your product</label><textarea required="" maxlength="5000" id="Tell-us-about-your-product-2" name="Tell-us-about-your-product-2" data-name="Tell us about your product 2" aria-label="tell-us-about-your-product" class="text-area w-input"></textarea></div>
           </div>
-          <div data-netlify-recaptcha="true"></div><input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button"></form>
+          <div id="recaptcha-block" class="google-captcha"></div>
+          <input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button" id="submit">
         <div class="success-message w-form-done">
           <div class="success-text">Thank you! Your submission has been received!</div>
         </div>
@@ -201,5 +202,47 @@
 <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
 <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
 <script defer type="text/javascript" src="/js/about-video-hero.js" charset="UTF-8"></script>
+<script>
+  let contactForm = document.getElementById('contact-us')
+  var io = new IntersectionObserver(
+    entries => {
+      if (entries[0].isIntersecting) {
+        const gRecaptchaHref = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
+        const gStaticRecaptchaTags = document.querySelectorAll(`script[src^="${gRecaptchaHref}"]`)[0]
+        
+        if (gStaticRecaptchaTags) {
+          return;
+        }
+        let recaptchaCallback = document.createElement('script')
+        recaptchaCallback.type = 'text/javascript'
+        const code = `
+          var captcha;
+          var onloadCallback = function () {
+            captcha = grecaptcha.render('recaptcha-block', {
+              'sitekey': '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'
+            });
+          };
+          function VerifyCaptcha() {
+            console.log(grecaptcha.getResponseHeader(captcha));
+            return false;
+          }
+        `;
+        recaptchaCallback.appendChild(document.createTextNode(code))
+        document.body.appendChild(recaptchaCallback);
+
+        let gStaticRecaptcha = document.createElement('script')
+        gStaticRecaptcha.src = gRecaptchaHref
+        gStaticRecaptcha.defer = true;
+        document.body.appendChild(gStaticRecaptcha);
+      }
+    },
+    {
+      root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
+      rootMargin: '0px',
+      threshold: 1
+    }
+  );
+  io.observe(contactForm);
+</script>
 </body>
 </html>
