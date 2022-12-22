@@ -285,61 +285,70 @@
   <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/video-hero.js" charset="UTF-8"></script>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" defer></script>
-  <script type="text/javascript">
-      var captcha;
-
-      var onloadCallback = function () {
-        captcha = grecaptcha.render('recaptcha-block', {
-          'sitekey': '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'
-        });
-      };
-
-      function VerifyCaptcha() {
-        console.log(grecaptcha.getResponseHeader(captcha));
-        return false;
-      }
-  </script>
+  
   <script>
-    // let recaptchaBlock = document.getElementById('recaptcha-block')
+    let contactForm = document.getElementById('contact-us')
     // const docHead = document.head
     // let recaptChaScript = ''
     // let recaptChaCss = ''
-    // var io = new IntersectionObserver(
-    //   entries => {
-    //     const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
-    //     const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
-    //     let iframeRecaptcha = document.querySelectorAll('iframe[title="reCAPTCHA"]')[0]
-    //     console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0], iframeRecaptcha); 
-    //     if (gStaticRecaptchaCss) {
-    //       console.log('gStaticRecaptchaCss');
-    //       recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
-    //       docHead.removeChild(gStaticRecaptchaCss)
-    //     }
+    var io = new IntersectionObserver(
+      entries => {
+        // const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
+        // const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
+        // let iframeRecaptcha = document.querySelectorAll('iframe[title="reCAPTCHA"]')[0]
+        // console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0], iframeRecaptcha); 
+        // if (gStaticRecaptchaCss) {
+        //   console.log('gStaticRecaptchaCss');
+        //   recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
+        //   docHead.removeChild(gStaticRecaptchaCss)
+        // }
 
-    //     if (gStaticRecaptchaTags && gStaticRecaptchaTags.length > 0) {
-    //       console.log('gStaticRecaptchaTags');
-    //       gStaticRecaptchaTags.forEach(element => {
-    //         recaptChaScript = element.getAttribute('src')
-    //         docHead.removeChild(element)
-    //       });
-    //     }
+        // if (gStaticRecaptchaTags && gStaticRecaptchaTags.length > 0) {
+        //   console.log('gStaticRecaptchaTags');
+        //   gStaticRecaptchaTags.forEach(element => {
+        //     recaptChaScript = element.getAttribute('src')
+        //     docHead.removeChild(element)
+        //   });
+        // }
 
-    //     if (entries[0].isIntersecting) {
-    //       console.log("isIntersecting")
-    //       let gStaticRecaptcha = document.createElement('script')
-    //       gStaticRecaptcha.src = recaptChaScript
-    //       gStaticRecaptcha.defer = true;
-    //       docHead.appendChild(gStaticRecaptcha)
-    //     }
-    //   },
-    //   {
-    //     root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
-    //     rootMargin: '0px',
-    //     threshold: 1
-    //   }
-    // );
-    // io.observe(recaptchaBlock);
+        if (entries[0].isIntersecting) {
+          console.log("isIntersecting")
+          const gRecaptchaHref = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'
+          const gStaticRecaptchaTags = document.querySelectorAll(`script[src^="${gRecaptchaHref}"]`)[0]
+          
+          if (gStaticRecaptchaTags) {
+            return;
+          }
+          let recaptchaCallback = document.createElement('script')
+          recaptchaCallback.type = 'text/javascript'
+          const code = `
+            var captcha;
+            var onloadCallback = function () {
+              captcha = grecaptcha.render('recaptcha-block', {
+                'sitekey': '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'
+              });
+            };
+            function VerifyCaptcha() {
+              console.log(grecaptcha.getResponseHeader(captcha));
+              return false;
+            }
+          `;
+          recaptchaCallback.appendChild(document.createTextNode(code))
+          document.body.appendChild(recaptchaCallback);
+
+          let gStaticRecaptcha = document.createElement('script')
+          gStaticRecaptcha.src = gRecaptchaHref
+          gStaticRecaptcha.defer = true;
+          document.body.appendChild(gStaticRecaptcha);
+        }
+      },
+      {
+        root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
+        rootMargin: '0px',
+        threshold: 1
+      }
+    );
+    io.observe(contactForm);
   </script>
 </body>
 </html>
