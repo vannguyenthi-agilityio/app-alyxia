@@ -252,7 +252,8 @@
             <div id="w-node-534512e44d62-ffa1d91c" class="label-and-field"><label for="Tell-us-about-your-product" class="field-label">Tell us about your product</label><textarea required="" maxlength="5000" id="Tell-us-about-your-product" name="Tell-us-about-your-product" data-name="Tell us about your product" class="text-area w-input"></textarea></div>
             <div id="w-node-534512e44d57-ffa1d91c" class="label-and-field"><label for="How-did-you-hear-about-us" class="field-label">How did you hear about Agility?</label><input type="text" class="text-field w-input" maxlength="256" name="How-did-you-hear-about-us" data-name="How-did-you-hear-about-us" id="How-did-you-hear-about-us"></div>
           </div>
-          <div id="recaptcha-block" data-netlify-recaptcha="true"></div>
+          <!-- <div id="recaptcha-block" data-netlify-recaptcha="true"></div> -->
+          <div id="recaptcha-block" class="google-captcha"></div>
           <input type="submit" value="SUBMIT" data-wait="Please wait..." class="submit-button w-button" id="submit">
         </form>
         <div class="success-message w-form-done">
@@ -284,48 +285,61 @@
   <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/video-hero.js" charset="UTF-8"></script>
-  <script defer type="text/javascript" src="https://www.google.com/recaptcha/api.js" charset="UTF-8"></script>
-  
-  <script>
-    let recaptchaBlock = document.getElementById('recaptcha-block')
-    const docHead = document.head
-    let recaptChaScript = ''
-    let recaptChaCss = ''
-    var io = new IntersectionObserver(
-      entries => {
-        const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
-        const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
-        let iframeRecaptcha = document.querySelectorAll('iframe[title="reCAPTCHA"]')[0]
-        console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0], iframeRecaptcha); 
-        if (gStaticRecaptchaCss) {
-          console.log('gStaticRecaptchaCss');
-          recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
-          docHead.removeChild(gStaticRecaptchaCss)
-        }
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" defer></script>
+  <script type="text/javascript">
+      var captcha;
 
-        if (gStaticRecaptchaTags && gStaticRecaptchaTags.length > 0) {
-          console.log('gStaticRecaptchaTags');
-          gStaticRecaptchaTags.forEach(element => {
-            recaptChaScript = element.getAttribute('src')
-            docHead.removeChild(element)
-          });
-        }
+      var onloadCallback = function () {
+        captcha = grecaptcha.render('recaptcha-block', {
+          'sitekey': '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'
+        });
+      };
 
-        if (entries[0].isIntersecting) {
-          console.log("isIntersecting")
-          let gStaticRecaptcha = document.createElement('script')
-          gStaticRecaptcha.src = recaptChaScript
-          gStaticRecaptcha.defer = true;
-          docHead.appendChild(gStaticRecaptcha)
-        }
-      },
-      {
-        root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
-        rootMargin: '0px',
-        threshold: 1
+      function VerifyCaptcha() {
+        console.log(grecaptcha.getResponseHeader(captcha));
+        return false;
       }
-    );
-    io.observe(recaptchaBlock);
+  </script>
+  <script>
+    // let recaptchaBlock = document.getElementById('recaptcha-block')
+    // const docHead = document.head
+    // let recaptChaScript = ''
+    // let recaptChaCss = ''
+    // var io = new IntersectionObserver(
+    //   entries => {
+    //     const gStaticRecaptchaTags = document.querySelectorAll('script[src^="https://www.gstatic.com/recaptcha/"]')
+    //     const gStaticRecaptchaCss = document.querySelectorAll('link[href^="https://www.gstatic.com/recaptcha/"]')[0]
+    //     let iframeRecaptcha = document.querySelectorAll('iframe[title="reCAPTCHA"]')[0]
+    //     console.log(entries[0], gStaticRecaptchaCss, gStaticRecaptchaTags[0], iframeRecaptcha); 
+    //     if (gStaticRecaptchaCss) {
+    //       console.log('gStaticRecaptchaCss');
+    //       recaptChaCss = gStaticRecaptchaCss.getAttribute('href')
+    //       docHead.removeChild(gStaticRecaptchaCss)
+    //     }
+
+    //     if (gStaticRecaptchaTags && gStaticRecaptchaTags.length > 0) {
+    //       console.log('gStaticRecaptchaTags');
+    //       gStaticRecaptchaTags.forEach(element => {
+    //         recaptChaScript = element.getAttribute('src')
+    //         docHead.removeChild(element)
+    //       });
+    //     }
+
+    //     if (entries[0].isIntersecting) {
+    //       console.log("isIntersecting")
+    //       let gStaticRecaptcha = document.createElement('script')
+    //       gStaticRecaptcha.src = recaptChaScript
+    //       gStaticRecaptcha.defer = true;
+    //       docHead.appendChild(gStaticRecaptcha)
+    //     }
+    //   },
+    //   {
+    //     root: null, // avoiding 'root' or setting it to 'null' sets it to default value: viewport
+    //     rootMargin: '0px',
+    //     threshold: 1
+    //   }
+    // );
+    // io.observe(recaptchaBlock);
   </script>
 </body>
 </html>
