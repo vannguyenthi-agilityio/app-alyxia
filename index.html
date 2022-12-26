@@ -301,7 +301,6 @@
             return;
           }
           let recaptchaCallback = document.createElement('script')
-          let cookiesCallback = document.createElement('link') //  Cookies Consent
           recaptchaCallback.type = 'text/javascript'
           const code = `
             var captcha;
@@ -315,12 +314,6 @@
               return false;
             }
           `;
-          recaptchaCallback.appendChild(document.createTextNode(code))
-          document.body.appendChild(recaptchaCallback);
-
-          //* Cookies Consent */
-          cookiesCallback.appendChild(document.createTextNode(code))
-          document.body.appendChild(cookiesCallback);
 
           let gStaticRecaptcha = document.createElement('script')
           gStaticRecaptcha.src = gRecaptchaHref
