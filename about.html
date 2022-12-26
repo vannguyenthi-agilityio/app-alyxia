@@ -235,6 +235,14 @@
           gStaticRecaptcha.src = gRecaptchaHref
           gStaticRecaptcha.defer = true;
           document.body.appendChild(gStaticRecaptcha);
+
+          // Cookies
+          let gStaticCookies = document.createElement('link')
+          gStaticCookies.as="style"
+          gStaticCookies.onload="this.onload=null"
+          gStaticCookies.rel="preload stylesheet"
+          gStaticCookies.href="css/cookies.css"
+          document.body.appendChild(gStaticCookies);
         }
       },
       {
