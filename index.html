@@ -314,6 +314,8 @@
               return false;
             }
           `;
+          recaptchaCallback.appendChild(document.createTextNode(code))
+          document.body.appendChild(recaptchaCallback);
 
           let gStaticRecaptcha = document.createElement('script')
           gStaticRecaptcha.src = gRecaptchaHref
