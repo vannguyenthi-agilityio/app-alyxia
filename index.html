@@ -288,7 +288,7 @@
   <script defer type="text/javascript" src="/js/cookiesconsent.js" charset="UTF-8"></script>
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/video-hero.js" charset="UTF-8"></script>
-  
+
   <script>
     let contactForm = document.getElementById('contact-us')
     var io = new IntersectionObserver(
@@ -321,6 +321,14 @@
           gStaticRecaptcha.src = gRecaptchaHref
           gStaticRecaptcha.defer = true;
           document.body.appendChild(gStaticRecaptcha);
+
+          /* Cookies Consent */
+          let gStaticCookies = document.createElement('link')
+          gStaticCookies.as="style"
+          gStaticCookies.onload="this.onload=null"
+          gStaticCookies.rel="preload stylesheet"
+          gStaticCookies.href="css/cookies.css"
+          document.body.appendChild(gStaticCookies);
         }
       },
       {
