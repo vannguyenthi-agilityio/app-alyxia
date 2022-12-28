@@ -14,7 +14,7 @@
   <link href="css/normalize.css" rel="preload stylesheet" as="style" onload="this.onload=null">
   <link href="css/global.css" rel="preload stylesheet" as="style" onload="this.onload=null">
   <link href="css/about/common.css" rel="preload stylesheet" as="style" onload="this.onload=null">
-  <style>:root{--light:#fff;--dark:#000;--maxWContainer:1440px;--heightViewport:100vh;--colorPrimary:#0a2630}.ml-24{margin-left:24px}.mb-40{margin-bottom:40px}.mt-0{margin-top:0}.w-full{width:100%}.h-full{height:100%}.max-w-108{max-width:108px}.min-w-2{min-width:2px}.min-h-60{min-height:60px}.w-container{max-width:var(--maxWContainer)}.align-center{align-items:center}.d-flex{display:flex}.d-flex-column{flex-direction:column}.d-flex-center{display:flex;justify-content:center;align-items:center}.opacity-0{opacity:0}.f-size-16{font-size:16px}.f-size-120{font-size:120px;line-height:120px}.f-bold{font-family:var(--fontBold)}.f-extra{font-family:var(--fontExtraBold)}.f-medium{font-family:var(--fontMedium)}.text-gray{color:var(--colorPrimary)}.letter-spacing-sm{letter-spacing:-.32px}.bg-gray{background-color:var(--colorPrimary)}.bg-dark{background-color:var(--dark)}.bg-light{background-color:var(--light)}.p-absolute{position:absolute}.p-relative{position:relative}.p-fixed{position:fixed}.inset-convert-auto{left:0;top:0;right:auto;bottom:auto}.z-index-0{z-index:0}.z-index-1{z-index:1}.z-index-5{z-index:5}.z-index-10{z-index:10}.z-index-20{z-index:20}.z-index-70{z-index:70}.text-center{text-align:center}.h-60{height:60px}.h-viewport{height:var(--heightViewport)}</style>
+  <style>:root{--light:#fff;--dark:#000;--maxWContainer:1440px;--heightViewport:100vh;--colorPrimary:#0a2630}.ml-24{margin-left:24px}.mb-40{margin-bottom:40px}.mt-0{margin-top:0}.w-full{width:100%}.h-full{height:100%}.max-w-108{max-width:108px}.w-container{max-width:var(--maxWContainer)}.align-center{align-items:center}.d-flex{display:flex}.d-flex-column{flex-direction:column}.d-flex-center{display:flex;justify-content:center;align-items:center}.opacity-0{opacity:0}.f-size-16{font-size:16px}.f-size-120{font-size:120px;line-height:120px}.f-bold{font-family:var(--fontBold)}.f-extra{font-family:var(--fontExtraBold)}.f-medium{font-family:var(--fontMedium)}.text-gray{color:var(--colorPrimary)}.letter-spacing-sm{letter-spacing:-.32px}.bg-gray{background-color:var(--colorPrimary)}.bg-dark{background-color:var(--dark)}.bg-light{background-color:var(--light)}.p-absolute{position:absolute}.p-relative{position:relative}.p-fixed{position:fixed}.inset-convert-auto{left:0;top:0;right:auto;bottom:auto}.z-index-0{z-index:0}.z-index-1{z-index:1}.z-index-5{z-index:5}.z-index-10{z-index:10}.z-index-20{z-index:20}.z-index-70{z-index:70}.text-center{text-align:center}.h-60{height:60px}.h-viewport{height:var(--heightViewport)}</style>
   <link href="css/layouts/footer.css" rel="preload stylesheet" as="style" onload="this.onload=null">
   <link href="css/about/webflow.css" rel="preload stylesheet" as="style" onload="this.onload=null">
   <link href="css/about/media.css" rel="preload stylesheet" as="style" onload="this.onload=null">
@@ -27,12 +27,14 @@
 </head>
 <body class="about-body">
   <div data-collapse="medium" data-animation="default" data-duration="400" class="bg-light w-full z-index-20 p-fixed h-60 navbar w-nav">
-    <div class="z-index-70 h-full container w-container"><a aria-label="agility-logo-container" href="index.html" class="d-flex align-center h-full max-w-108 ml-24 brand w-nav-brand">
-      <picture>
-        <source width="108px" height="33px" srcset="images/home-page/webp/agility-logo.webp" type="image/webp">
-        <source srcset="images/agility-logo.png" type="image/png">
-        <img src="images/agility-logo.png" alt="Agility logo" class="agility-logo"></a>
-      </picture>
+    <div class="z-index-70 h-full container w-container">
+      <a aria-label="agility-logo-container" href="index.html" class="d-flex align-center h-full max-w-108 ml-24 brand w-nav-brand">
+        <picture>
+          <source width="108px" height="33px" srcset="images/home-page/webp/agility-logo.webp" type="image/webp">
+          <source srcset="images/agility-logo.png" type="image/png">
+          <img src="images/agility-logo.png" alt="Agility logo" class="agility-logo">
+        </picture>
+      </a>
       <div class="menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
@@ -44,10 +46,8 @@
     </div>
   </div>
   <div data-w-id="d77a82d6-a105-fc96-54c6-51336257d9b6" class="services-video-section">
-    <div class="video-cover">
-      <div data-w-id="d77a82d6-a105-fc96-54c6-51336257d9b8" style="background-color:rgb(0,0,0)" class="video-cover-div"></div>
-    </div>
-    <div class="video-block">
+    <div class="p-absolute z-index-10 w-full h-full video-cover bg-light"></div>
+    <div class="p-absolute z-index-5 w-full h-full video-block">
       <!-- CLOSE BUTTON -->
       <div id="close" data-w-id="d77a82d6-a105-fc96-54c6-51336257d9ba" class="close-link-block"><img width="40px" height="40px" src="images/x.svg" alt="" class="x"><img loading="lazy" width="40px" height="40px" src="images/x-inverted.svg" alt="" class="x-inverted"></div>
       <!-- IFRAME VIDEO -->
@@ -60,7 +60,8 @@
         <div id="play" data-w-id="d77a82d6-a105-fc96-54c6-51336257d9c2" class="play-block"><img width="40px" height="40px" src="images/play.svg" data-w-id="d77a82d6-a105-fc96-54c6-51336257d9c3" style="-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" alt="" class="play-button play-block services"><img width="40px" height="40px" src="images/inverted-play.svg" alt="" class="inverted-play-button"></div>
       </div>
       <div class="scroll-indicator-block services">
-        <div data-w-id="d77a82d6-a105-fc96-54c6-51336257d9c6" class="indicator-line"></div>
+        <div data-w-id="0752720a-0e06-cae6-ac26-4e6fec186b43" style="height:0PX" class="indicator-line-bottom"></div>
+        <div data-w-id="d77a82d6-a105-fc96-54c6-51336257d9c6" style="height:0PX" class="indicator-line"></div>
       </div>
     </div>
   </div>
