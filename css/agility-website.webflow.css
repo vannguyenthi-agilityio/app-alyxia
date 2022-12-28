@@ -157,6 +157,8 @@ p strong {
   -ms-flex-align: center;
   align-items: center;
   opacity: 0;
+  min-width: 362px;
+  min-height:60px;
 }
 
 .nav-menu.case-study-menu {
@@ -3456,6 +3458,8 @@ p strong {
     justify-content: center;
   }
   .video-text-block.services {
+    max-width:258px;
+    max-height: 140px;
     position: static;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -4000,6 +4004,8 @@ p strong {
   }
   .menu-button.our-services-menu {
     color: #0a2630;
+    min-width: 60px;
+    min-height: 60px;
   }
   .menu-button-home {
     color: #0a2630;
