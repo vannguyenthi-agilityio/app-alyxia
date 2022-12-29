@@ -112,6 +112,8 @@ p strong {
 .video-text.services {
   color: #fff;
   text-align: left;
+  transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  opacity: 1;
 }
 
 .brand {
@@ -793,6 +795,11 @@ p strong {
 
 .play-block {
   position: relative;
+}
+
+.play-button {
+  transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+  opacity: 1;
 }
 
 .video-block {
