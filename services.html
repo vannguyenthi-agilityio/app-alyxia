@@ -207,7 +207,7 @@ html, body {
   <script defer type="text/javascript" src="/js/cookieconsent-init.js"></script>
   <script defer type="text/javascript" src="/js/services-video-hero.js" charset="UTF-8"></script>
 
-  <!-- Defer Recaptcha -->
+  <!-- Defer Recaptcha and Cookies Consent -->
   <script>
     let contactForm = document.getElementById('wf-form-services-contact-form')
     var io = new IntersectionObserver(
@@ -240,6 +240,14 @@ html, body {
           gStaticRecaptcha.src = gRecaptchaHref
           gStaticRecaptcha.defer = true;
           document.body.appendChild(gStaticRecaptcha);
+
+          /* Cookies Consent */
+          let gStaticCookies = document.createElement('link')
+          gStaticCookies.as="style"
+          gStaticCookies.onload="this.onload=null"
+          gStaticCookies.rel="preload stylesheet"
+          gStaticCookies.href="css/cookies.css"
+          document.body.appendChild(gStaticCookies);
         }
       },
       {
