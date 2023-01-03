@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="568px" viewBox="0 0 1440 568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Rectangle 🌈ease-in-out;lrgb;15</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F7931E" offset="0%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.996078431" offset="8.62099125%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.984313725" offset="16.5597668%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.964705882" offset="23.9300292%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.941176471" offset="30.8454811%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.91372549" offset="37.4198251%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.882352941" offset="43.7667639%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.850980392" offset="50%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.819607843" offset="56.2332361%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.788235294" offset="62.5801749%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.760784314" offset="69.1545189%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.737254902" offset="76.0699709%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.717647059" offset="83.4402332%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.705882353" offset="91.3790087%"></stop>
+            <stop stop-color="#F7931E" stop-opacity="0.701960784" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-🌈ease-in-out;lrgb;15" fill="url(#linearGradient-1)" x="0" y="0" width="1440" height="568"></rect>
+    </g>
+</svg>
