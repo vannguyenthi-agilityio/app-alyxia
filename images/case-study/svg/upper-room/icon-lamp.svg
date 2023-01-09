@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="39px" viewBox="0 0 27 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>icon@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study-upperroom" transform="translate(-566.000000, -1211.000000)">
+            <g id="icon" transform="translate(559.000000, 1211.000000)">
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                <g id="Group-5" transform="translate(7.000000, 0.000000)" stroke="#079BE8" stroke-width="3">
+                    <path d="M13.5,1.5 C6.87737282,1.5 1.5,6.95402934 1.5,13.6924477 C1.5,17.3378355 3.08182992,20.7167028 5.77172816,23.0200862 L6.15254972,23.346187 L7.69465219,30.3237424 C7.8465267,31.0108398 8.45561694,31.5 9.1592992,31.5 L17.8407008,31.5 C18.5443831,31.5 19.1534733,31.0108398 19.3053777,30.3236073 L20.8485138,23.3453403 L21.2291663,23.0193202 C23.9185351,20.7159373 25.5,17.3374182 25.5,13.6924477 C25.5,6.95402934 20.1226272,1.5 13.5,1.5 Z" id="Combined-Shape"></path>
+                    <polyline id="Path-7" stroke-linecap="round" stroke-linejoin="round" points="9.89678071 15.9961269 12.9428571 19.2460764 19.0199018 12.7461775"></polyline>
+                    <line x1="9.89678071" y1="36.6697235" x2="18.0362725" y2="36.6697235" id="Path-6" stroke-linecap="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
