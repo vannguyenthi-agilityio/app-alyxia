@@ -25,12 +25,19 @@
 </head>
 <body>
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
-    <div class="container w-container"><a href="../index.html" class="brand w-nav-brand"><img src="../images/Agility-Logo.png" alt="" class="agility-logo"></a>
+    <div class="container w-container">
+      <a aria-label="agility-logo" href="../index.html" class="d-flex align-center h-full max-w-108 ml-24 brand w-nav-brand">
+        <picture>
+          <source width="100%" height="100%" srcset="../images/common/webp/agility-logo.webp" type="image/webp">
+          <source srcset="../images/common/png/agility-logo.png" type="image/png">
+          <img src="../images/common/png/agility-logo.png" data-w-id="c37e27f8-dca7-6e67-1bbf-cb333452a2f3" alt="Agility Logo" class="agility-logo">
+        </picture>
+      </a>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
       <nav role="navigation" class="nav-menu case-study-menu w-nav-menu">
-        <div class="nav-link-block"><a href="../index.html" class="nav-link w-nav-link">Home</a></div><a href="../about.html" class="nav-link w-nav-link">About</a><a href="../services.html" class="nav-link w-nav-link">Services</a><a href="http://agilityio.com/#contact" class="nav-link w-nav-link">Contact</a></nav>
+        <div class="nav-link-block"><a aria-label="nav-link-home" href="../index.html" class="nav-link w-nav-link">Home</a></div><a aria-label="nav-link-about" href="../about.html" class="nav-link w-nav-link">About</a><a aria-label="nav-link-services" href="../services.html" class="nav-link w-nav-link">Services</a><a aria-label="nav-link-contact" href="http://agilityio.com/#contact" class="nav-link w-nav-link">Contact</a></nav>
     </div>
   </div>
   <div data-w-id="cc9ccd0c-a145-367d-89b3-d4ef1b955554" class="mobile-case-study-hero-section drum-hero-section">
@@ -42,7 +49,11 @@
             <p class="case-study-paragraph-text white-text">Drum is a new and revolutionary on-demand sales force mobile platform. A three-sided marketplace, Drum connects online brands offering products and services to the customers they want through an on-demand network of freelance salespeople, called <em>Drummers</em>.</p>
           </div>
         </div>
-        <div data-w-id="e96889f9-81d3-8bcc-3444-f073233b7b74" class="case-study-mobile-hero-right-column drum-cast-study-mobile-hero-right-column w-col w-col-6"><img src="../images/drum-dashboard.png" alt="Screenshot of Drum website and mobile app user dashboard" srcset="../images/drum-dashboard-p-500.png 500w, ../images/drum-dashboard-p-800.png 800w, ../images/drum-dashboard-p-1080.png 1080w, ../images/drum-dashboard.png 1563w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, 60vw" class="mobile-case-study-hero-image drum-hero"></div>
+        <picture data-w-id="e96889f9-81d3-8bcc-3444-f073233b7b74" class="case-study-mobile-hero-right-column drum-cast-study-mobile-hero-right-column w-col w-col-6">
+          <source loading="lazy" media="(max-width: 479px)" width="327px" height="247px" srcset="../images/case-study/drum/webp/drum-dashboard-mobile.webp 1x, ../images/case-study/drum/webp/drum-dashboard-mobile-2x.webp 2x" type="image/webp">
+          <source media="(min-width: 480px)" srcset="../images/case-study/drum/webp/drum-dashboard-p-800.webp 1080w" type="image/webp">
+          <img src="../images/drum-dashboard.png" alt="Screenshot of Drum website and mobile app user dashboard" srcset="../images/case-study/drum/png/drum-dashboard-p-500.png 500w, ../images/case-study/drum/png/drum-dashboard-p-800.png 800w, ../images/case-study/drum/png/drum-dashboard-p-1080.png 1080w, ../images/case-study/drum/png/drum-dashboard.png 1563w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, 60vw" class="mobile-case-study-hero-image drum-hero">
+        </picture>
       </div>
     </div>
   </div>
@@ -50,7 +61,7 @@
     <div class="mobile-case-study-container the-story">
       <div class="the-story-block">
         <h2 class="case-study-h2 the-story-header">The Story</h2>
-        <p data-w-id="8274fdb7-6898-79e6-3f4f-41935d116b1d" style="opacity:0;-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="case-study-paragraph-text">From the minds of AgilityIO client and fintech unicorn Kabbage, the mission of Drum is to provide businesses that are not ready to hire a full-time sales team, with the human power to help them with sales. Drum approached us with a need scope, design and develop the minimum viable product (MVP).<br>‍<br>We provided a greenfield, end-to-end solution including data modeling, code skeleton initialization, and fullstack development. We also implemented AI-based tools, allowing the technology to analyze the capabilities and experience of <em>Drummers</em>, matching them with businesses looking to retain their services.<br></p>
+        <p data-w-id="8274fdb7-6898-79e6-3f4f-41935d116b1d" class="defer-transform case-study-paragraph-text">From the minds of AgilityIO client and fintech unicorn Kabbage, the mission of Drum is to provide businesses that are not ready to hire a full-time sales team, with the human power to help them with sales. Drum approached us with a need scope, design and develop the minimum viable product (MVP).<br>‍<br>We provided a greenfield, end-to-end solution including data modeling, code skeleton initialization, and fullstack development. We also implemented AI-based tools, allowing the technology to analyze the capabilities and experience of <em>Drummers</em>, matching them with businesses looking to retain their services.<br></p>
       </div>
     </div>
   </div>
@@ -68,7 +79,17 @@
           <p class="case-study-paragraph-text">We then kicked off frontend and backend development, prioritizing key features to achieve our target release date and cost.<br></p>
         </div>
       </div>
-      <div data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b481d" class="w-layout-grid ux-screens ux-collection-wrapper"><img src="../images/1_2.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/1_2-p-500.jpeg 500w, ../images/1_2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b481e-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b481e" class="ux-screen"><img src="../images/2_1.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/2_1-p-500.jpeg 500w, ../images/2_1.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b481f-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b481f" class="ux-screen"><img src="../images/3_1.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/3_1-p-500.jpeg 500w, ../images/3_1.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4820-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4820" class="ux-screen"><img src="../images/4_2.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/4_2-p-500.jpeg 500w, ../images/4_2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4821-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4821" class="ux-screen"><img src="../images/5_2.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/5_2-p-500.jpeg 500w, ../images/5_2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4822-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4822" class="ux-screen bottom-row"><img src="../images/6_2.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/6_2-p-500.jpeg 500w, ../images/6_2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4823-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4823" class="ux-screen bottom-row"><img src="../images/7_2.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/7_2-p-500.jpeg 500w, ../images/7_2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4824-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4824" class="ux-screen bottom-row"><img src="../images/8_2.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/8_2-p-500.jpeg 500w, ../images/8_2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4825-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4825" class="ux-screen bottom-row"></div><img src="../images/Triangle-Gradient_1.svg" data-w-id="c4cceaa9-d249-6602-417e-3686be4d32ba" style="-webkit-transform:translate3d(30%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(30%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(30%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(30%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="triangle-gradient drum-triangle-gradient"></div>
+      <div data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b481d" class="w-layout-grid ux-screens ux-collection-wrapper">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-1.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-1-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-1.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b481e-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b481e" class="ux-screen">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-2.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-2-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-2.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b481f-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b481f" class="ux-screen">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-3.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-3-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-3.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4820-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4820" class="ux-screen">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-4.jpg" alt="Screenshot of mid-fidelity wireframe of Drum app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-4-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-4.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4821-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4821" class="ux-screen">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-5.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-5-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-5.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4822-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4822" class="ux-screen bottom-row">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-6.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-6-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-6.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4823-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4823" class="ux-screen bottom-row">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-7.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-7-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-7.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4824-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4824" class="ux-screen bottom-row">
+        <img loading="lazy" src="../images/case-study/drum/drum-collection-8.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/case-study/drum/drum-collection-8-p-500.jpeg 500w, ../images/case-study/drum/drum-collection-8.jpg 750w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 100vw" id="w-node-0846c23b4825-7da1d925" data-w-id="87f7f6e3-6ee4-5a9d-e808-0846c23b4825" class="ux-screen bottom-row"></div>
+        <img loading="lazy" src="../images/case-study/drum/triangle-radient.svg" data-w-id="c4cceaa9-d249-6602-417e-3686be4d32ba" alt="" class="defer-transform-triangle triangle-gradient drum-triangle-gradient">
+      </div>
   </div>
   <div class="app-design-and-features-section drum-app-design-and-features-section">
     <div class="mobile-case-study-container">
@@ -77,10 +98,19 @@
         <div class="feature-1-left-column w-col w-col-6">
           <p class="case-study-paragraph-text feature-1-text drum-feature-1-text"><strong class="case-study-h3">Brands Acquire Customers<br></strong>Create a profile, publish an offer, and hire <em>Drummers</em> to promote your business.<br></p>
         </div>
-        <div class="feature-1-right-column bookdoc-feature-1-right-column w-col w-col-6"><img src="../images/brands.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/brands-p-800.jpeg 800w, ../images/brands-p-1080.jpeg 1080w, ../images/brands-p-1600.jpeg 1600w, ../images/brands.jpg 1648w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, 75vw" class="feature-1-image drum-feature-1-image"></div>
+        <div class="feature-1-right-column bookdoc-feature-1-right-column w-col w-col-6">
+          <picture data-w-id="e96889f9-81d3-8bcc-3444-f073233b7b74" class="case-study-mobile-hero-right-column drum-cast-study-mobile-hero-right-column w-col w-col-6">
+            <source loading="lazy" media="(max-width: 479px)" width="327px" height="247px" srcset="../images/case-study/drum/webp/brands-mobile.webp 1x, ../images/case-study/drum/webp/brands-mobile-2x.webp 2x" type="image/webp">
+            <source media="(min-width: 480px)" srcset="../images/case-study/drum/webp/brands-p-800.webp 1080w" type="image/webp">
+            <img src="../images/case-study/drum/brands.jpg" alt="Screenshot of final UX/UI design for Drum mobile app, designed and developed by AgilityIO" srcset="../images/case-study/drum/brands-p-800.jpeg 800w, ../images/case-study/drum/brands-p-1080.jpeg 1080w, ../images/case-study/drum/brands-p-1600.jpeg 1600w, ../images/case-study/drum/brands.jpg 1648w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 94vw, 75vw" class="feature-1-image drum-feature-1-image">
+          </picture>
+        </div>
       </div>
       <div data-w-id="2c214185-edae-2555-cc68-1a40fbe55c68" class="feature-2-row w-row">
-        <div class="feature-2-left-column drum-feature-2-left-column w-col w-col-5"><img src="../images/drummers.jpg" alt="Screenshot of Drum mobile app screen designed and developed by AgilityIO" class="feature-2-image drum-feature-2-image"></div>
+        <picture class="feature-2-left-column drum-feature-2-left-column w-col w-col-5">
+          <source width="100%" height="90%" srcset="../images/case-study/drum/webp/drummers.webp" type="image/webp">
+          <img loading="lazy" src="../images/drummers.jpg" alt="Screenshot of Drum mobile app screen designed and developed by AgilityIO" class="feature-2-image drum-feature-2-image">
+        </picture>
         <div class="feature-2-right-column w-col w-col-7">
           <p class="case-study-paragraph-text feature-2-text drum-feature-2-text"><strong class="case-study-h3"><em>Drummers</em> Promote &amp; Earn Money<br></strong>Trusted and highly-skilled brand ambassadors promote brands they believe in, track performance, and earn a commission with each sale.<br></p>
         </div>
@@ -89,7 +119,13 @@
         <div class="feature-3-left-column drum-feature-3-left-column w-col w-col-6">
           <p class="case-study-paragraph-text feature-3-text drum-feature-3-text"><strong class="case-study-h3">Buyers Discover &amp; Save <br></strong>Online shoppers can follow <em>Drummers</em>, their go-to personal personal concierge for access to great offers and curated experiences.</p>
         </div>
-        <div class="feature-3-right-column drum-feature-3-right-column w-col w-col-6"><img src="../images/Buyers.jpg" alt="Screenshot of Drum mobile app screen designed and developed by AgilityIO" srcset="../images/Buyers-p-500.jpeg 500w, ../images/Buyers-p-800.jpeg 800w, ../images/Buyers-p-1080.jpeg 1080w, ../images/Buyers.jpg 1172w" sizes="(max-width: 479px) 63vw, (max-width: 991px) 66vw, 50vw" class="feature-3-image-1 drum-feature-3-image-1"></div>
+        <div class="feature-3-right-column drum-feature-3-right-column w-col w-col-6">
+          <picture>
+            <source loading="lazy" media="(max-width: 479px)" width="327px" height="247px" srcset="../images/case-study/drum/webp/buyers-mobile.webp 1x, ../images/case-study/drum/webp/buyers-mobile-2x.webp 2x" type="image/webp">
+            <source media="(min-width: 480px)" srcset="../images/case-study/drum/webp/buyers-p-800.webp 1080w" type="image/webp">
+            <img loading="lazy" src="../images/case-study/drum/buyers.jpg" alt="Screenshot of Drum mobile app screen designed and developed by AgilityIO" srcset="../images/case-study/drum/buyers-p-500.jpeg 500w, ../images/case-study/drum/buyers-p-800.jpeg 800w, ../images/Buyers-p-1080.jpeg 1080w, ../images/case-study/drum/buyers.jpg 1172w" sizes="(max-width: 479px) 63vw, (max-width: 991px) 66vw, 50vw" class="feature-3-image-1 drum-feature-3-image-1">
+          </picture>
+        </div>
       </div>
     </div>
   </div>
@@ -100,67 +136,67 @@
       </div>
       <div class="w-layout-grid tech-stack-grid drum-tech-stack-grid">
         <div id="w-node-fb1b671c02a1-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/JS.jpg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="60%" src="../images/case-study/drum/js.jpg" alt="JS logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">JavaScript</h3>
         </div>
         <div id="w-node-fb1b671c02a6-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/html5.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/html5.svg" alt="HTML5 logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">HTML5</h3>
         </div>
         <div id="w-node-fb1b671c02ab-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/css3.svg" alt="" class="tech-stack-logo css3 drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/css3.svg" alt="CSS3 logo" class="tech-stack-logo css3 drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">CSS3</h3>
         </div>
         <div id="w-node-bf2468896e77-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/sass.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/sass.svg" alt="SASS logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">SaSS</h3>
         </div>
         <div id="w-node-d0d2996bf20a-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/GraphQL_Logo.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/graphql.svg" alt="GraphQL logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">GraphQL</h3>
         </div>
         <div id="w-node-f02d095ae176-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/Amplify.jpg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="52%" src="../images/case-study/drum/amplify.jpg" alt="Amplify logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">Amplify</h3>
         </div>
         <div id="w-node-fb1b671c02b0-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/react.svg" alt="" class="tech-stack-logo react drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/react.svg" alt="React logo" class="tech-stack-logo react drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">React</h3>
         </div>
         <div id="w-node-e283ebfd7c9d-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/Storybook.svg" alt="" class="tech-stack-logo drum-tech-stack-logo storybook"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/storybook.svg" alt="Storybook logo" class="tech-stack-logo drum-tech-stack-logo storybook"></div>
           <h3 class="tech-stack-subheader">Storybook</h3>
         </div>
         <div id="w-node-fb1b671c02ce-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/Postgres.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/postgres.svg" alt="Postgres logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">PostgreSQL</h3>
         </div>
         <div id="w-node-e50c2395d81a-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/c--4.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/cshap.svg" alt="C# logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">C#</h3>
         </div>
         <div id="w-node-298f11dfe28f-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/ASPnet.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="68px" height="100%" src="../images/case-study/drum/aspnet.svg" alt="ASPnet logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">ASP.NET Core 3.0</h3>
         </div>
         <div id="w-node-89755800a80e-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/Entity.svg" alt="" class="tech-stack-logo entity drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/entity.svg" alt="Entity logo" class="tech-stack-logo entity drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">Entity</h3>
         </div>
         <div id="w-node-58c67d64cb7f-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/docker.svg" alt="" class="tech-stack-logo docker drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/docker.svg" alt="Docker logo" class="tech-stack-logo docker drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">Docker</h3>
         </div>
         <div id="w-node-bf4b518e3d95-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/kubernetes.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/kubernetes.svg" alt="Kubernetes logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">Kubernetes</h3>
         </div>
         <div id="w-node-7a69043137e0-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/Tux.svg" alt="" class="tech-stack-logo drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="80%" src="../images/case-study/drum/tux.svg" alt="Tux logo" class="tech-stack-logo drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader">Linux</h3>
         </div>
         <div id="w-node-fb1b671c02d8-7da1d925" class="tech-stack-block">
-          <div class="tech-stack-logo-block"><img src="../images/AWS.svg" alt="" class="tech-stack-logo aws drum-tech-stack-logo"></div>
+          <div class="tech-stack-logo-block"><img loading="lazy" width="100%" height="100%" src="../images/case-study/drum/aws.svg" alt="AWS logo" class="tech-stack-logo aws drum-tech-stack-logo"></div>
           <h3 class="tech-stack-subheader aws">Amazon Web Services</h3>
         </div>
       </div>
@@ -174,9 +210,9 @@
         <p class="case-study-paragraph-text the-result-text bookdoc-the-result-text">With $11 million in seed funding, Drum launched in the fall of 2019 with a focus on filling the ecosystem with <em>Drummers</em> and businesses in Atlanta and New York. At its core, the web platform and mobile app lets anyone become a gig economy salesperson, improving the lives of millions.</p>
       </div>
       <div class="the-result-row w-row">
-        <div class="the-result-column left w-col w-col-4"><a href="https://apps.apple.com/us/app/drum-earn-promote-discover/id1458518029" target="_blank" class="apple-store-link w-inline-block"><img src="../images/App-Store.svg" style="-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" alt="" class="app-store-button"><img src="../images/App-Store.svg" alt="" class="app-store-hover left-hover"></a></div>
-        <div class="the-result-column w-col w-col-4"><img src="../images/iPhone.jpg" alt="Screenshot of Drum mobile app screen designed and developed by AgilityIO" class="the-result-mockup"></div>
-        <div class="the-result-column right w-col w-col-4"><a href="https://play.google.com/store/apps/details?id=io.drum.drummer" target="_blank" class="google-play-link w-inline-block"><img src="../images/Google-Play.svg" style="-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" alt="" class="app-store-button"><img src="../images/Google-Play-Hover.svg" alt="" class="app-store-hover right-hover"></a></div>
+        <div class="the-result-column left w-col w-col-4"><a aria-label="apple-store" href="https://apps.apple.com/us/app/drum-earn-promote-discover/id1458518029" target="_blank" class="apple-store-link w-inline-block"><img loading="lazy" src="../images/case-study/common/app-store.svg"  alt="App Store" class="defer-transform app-store-button"><img src="../images/case-study/common/app-store-hover.svg" alt="" class="app-store-hover left-hover"></a></div>
+        <div class="the-result-column w-col w-col-4"><img loading="lazy" src="../images/case-study/drum/iphone.jpg" alt="Screenshot of Drum mobile app screen designed and developed by AgilityIO" class="the-result-mockup"></div>
+        <div class="the-result-column right w-col w-col-4"><a aria-label="google-play" href="https://play.google.com/store/apps/details?id=io.drum.drummer" target="_blank" class="google-play-link w-inline-block"><img loading="lazy" src="../images/case-study/common/google-play.svg" alt="Google Play" class="defer-transform app-store-button"><img src="../images/case-study/common/google-play-hover.svg" alt="" class="app-store-hover right-hover"></a></div>
       </div>
       <div class="client-link-block drum-link-block">
         <a href="https://www.drum.io" target="_blank" class="case-studies-link-block link-to-client drum w-inline-block">
