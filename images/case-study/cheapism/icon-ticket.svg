@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>icon@1x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="New-v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Case-Study-cheapism" transform="translate(-559.000000, -1147.000000)">
+            <g id="icon" transform="translate(559.000000, 1147.000000)">
+                <rect id="Rectangle" x="0" y="0" width="40" height="40"></rect>
+                <g id="Group-5" stroke="#584EFE" stroke-width="3">
+                    <circle id="Oval" cx="20" cy="20" r="18.5"></circle>
+                    <polyline id="Path-7" stroke-linecap="round" stroke-linejoin="round" points="13 20 17.6743948 25 27 15"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
